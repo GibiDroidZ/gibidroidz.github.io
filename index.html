@@ -8,155 +8,85 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="assets/css/indexStyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/index_style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 </head>
 <body>
-  <nav class="brown darken-3" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo white-text">GibiDroidZ</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+  <div class="GConstruction">
+      <i class="fa fa-cogs"></i>under construction
+  </div>
+  
+  <!-- GSection__NavBar ([I]/O) -->
+    <nav>
       <div class="container">
-        <br><br>
-        <h1 class="header center brown-text text-darken-3">Just. Another. Designer.</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">But not your ordinary one.</h5>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo white-text"><i class="material-icons">cloud</i>GibiDroidz</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+          <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+          <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+          <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+  <!-- GSection__NavBar (I/[O]) -->
+
+  <!-- GSection__Intro ([I]/O) -->
+  <div class="container row GSection__Intro valign-wrapper p_largeTop">
+    <!-- Profile -->
+    <div class="col l4 m6">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="assets/img/home/placeholder.jpg">
+        </div>
+
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">GibiByte TheoDroid<i class="material-icons right">more_vert</i></span>
+          <p>UI / UX Developer</p>
+        </div>
+
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">GibiByte TheoDroid<i class="material-icons right">close</i></span>
+          <p><i class="fa fa-envelope-o"></i>gibs.teodosio@gmail.com</p>
+          <p><i class="fa fa-facebook-square"></i>fb.com/gibs.teodosio</p>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="https://lh3.googleusercontent.com/BPbU8ir0AfeY_mmnhtYahDTpEHg-C8sLee_RRWKMZf87elu9ay9YxVvUbG0iMK-Avvv6BE3E3Xotp3CPGt0pUx9qjxEbiee24J8paPGPMuXRZgehmv8h3IkLOy1ZkMsPeLZ5mLDAZjIZmpNbasyZQQQyp7UxtxUz3z5htMBea6tXA6WdRvtM0sEzD_ohuuBlCmpiz3ULR1AHJoVRijLN-76EZ36Of3CT3-AtlZgoSTl3rf1BxEiGrWXO82u_Y3MpEwSonsBIBN0hyhiqE8rglIZCmLVEczYxViXSNX0yck1CQBJtYmsBNbo4kKvji0C53f7non9BhAXdeVpTyy2EBdT86EoT01aEp-whLI4-rQAic507vJW9WxFsga_o0DXVulsh1P6hvKqHI0jhMALuZiajauiv3lARtbYIlWOXnY4-crBz_o5sxxdOOqhGm7929CdLqNrOZvEnnsVDDAxsygOKtHo8IvJC8z8QmxmVsIzcsu5GmhJv1tgsAbTs_2LaA1Hs0pOtiLcIOMnPRIjqGlnp7JZzb1IgtslvT4O6HaDR6viBxrc4ZdRZ195975yB5PqBLJgvByGJFmPaaKrX-BM-Yji0U1J50StJsCo=w270-h203-no" alt="Unsplashed background img 1"></div>
-  </div>
 
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img class="activator" src="images/office.jpg">
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-             <p><a href="#">This is a link</a></p>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-             <p>Here is some more information about this product that is only revealed once clicked on.</p>
-           </div>
-         </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text darken-3"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text darken-3"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
+    <!-- Descriptor -->
+    <div class="col l8 m6 font_lobster center-align grey-text text-darken-3 ">
+        <h1 class="m_none">Just another <br />Designer</h1>
     </div>
   </div>
+  <!-- GSection__Intro (I/[O]) -->
 
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+  <!-- GSection__About ([I]/O) -->
+  <div id="about" class="section scrollspy GSection__About bgColor_gray210 p_largeTop">
+    <div class="container row grey-text text-darken-1">
+      <div class="col l3 m4 s12 center-align">
+        <img src="assets/img/home/gt-About.jpg" class="width_full p_largeTop">
       </div>
 
+      <div class="col l9 m8 s12">
+        <h1 class="font_lobster center-align">About</h1>
+        <p>23. Philippines. Loves minimal design. An aspiring artist who draws a lot. An aspiring musician who wants to learn how to play a piano and guitar. A designer. A developer. A programmer. GIMPista <strike>(Photoshop-ignorant)</strike>. Mac OSX/ Windows user. Just your ordinary guy. <strike>Single.</strike></p>
+      </div>
     </div>
   </div>
+  <!-- GSection__About (I/[O]) -->
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
 
 
   <!--  Scripts-->
