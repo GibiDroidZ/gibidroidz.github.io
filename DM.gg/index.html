@@ -30,11 +30,61 @@
     <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
     <p class="small-text">
       TO DO: <br>
-      1. Sync remaining parts and skill images <br>
+      1. Sync remaining parts and skill images + Fix icons (LOL)<br>
       2. Fix cached values when trying to do multiple search without reloading<br>
       3. Responsiveness issue
     </p>
     <p class="small-text"><i>Want to help the project? Join my discord <a href="https://discord.gg/MkKbAYFg9F">here</a></i></p>
+  </div>
+
+  <div class="donate">
+    <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
+    <p class="small-text"><i>If you are enjoying this project, you can consider donating through my wallet address. </i></p>
+    <button onclick="myFunction(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c</button>
+
+<style>
+.donate {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    left: 210px;
+}
+
+.donate button {
+    border:0;
+    background-color: transparent;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#toast-container {
+    top: initial;
+    right: initial;
+    bottom: 70px;
+    left: 210px;
+    max-width: 450px;
+}
+</style>
+    <script>
+      function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("wallet");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+      }
+    </script>
   </div>
 
   <div class="no-mobile">
@@ -68,7 +118,7 @@
         </div>
 
         <div class="col l2">
-          <button class="btn waves-effect waves-light getInput brown">Submit
+          <button class="btn waves-effect waves-light getInput brown">Search
             <i class="fas fa-paper-plane"></i>
           </button>
         </div>
