@@ -27,22 +27,43 @@
 </head>
 
 <body id="parallax">
-  <div class="white_bg"></div>
-  <div class="alert_message">
-    <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
-    <p class="small-text">
-      TO DO: <br>
-      1. Sync remaining parts and skill images + Fix icons (LOL)<br>
-      2. Fix cached values when trying to do multiple search without reloading<br>
-      3. Responsiveness issue
-    </p>
-    <p class="small-text"><i>Want to help the project? Join my discord <a href="https://discord.gg/MkKbAYFg9F">here</a></i></p>
+  <div class="bg_overlay"></div>
+
+  <div class="alert_trigger">
+    <a class="btn-floating pulse black"><i class="fa fa-gear fa-spin"></i></a>
   </div>
 
-  <div class="donate">
-    <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
-    <p class="small-text"><i>If you are enjoying this project, you can consider donating through my wallet address. </i></p>
-    <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c</button>
+  <div class="alert_message">
+    <div class="alert_content hide">
+      <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
+      <i class="fa fa-close alert_dismiss"></i>
+      <p class="small-text">
+        TO DO: <br>
+        1. Sync skill images + Fix icons (LOL)<br>
+        2. Responsiveness issue <br />
+        3. Let me know if some parts don't appaer, specially multi-word parts (Ex. Chocolate Ice Cream)
+      </p>
+      <p class="small-text">Want to help the project? Join my discord <b><i><a href="https://discord.gg/MkKbAYFg9F">here</a></i></b></p>
+
+      <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
+      <p class="small-text">
+        <i>If you are enjoying this project, you can consider donating through my wallet address. </i><br />
+        <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c</button>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="change_trigger">
+    <a class="btn-floating pulse black"><i class="fa fa-list"></i></a>
+  </div>
+
+  <div class="change_message hide">
+    <p><b>Changelogs:</b></p>
+    <i class="fa fa-close change_dismiss"></i>
+    <p class="small-text">
+      <b>01/20/22.<b> Released v0.0.1. This includes searching dragons, completed with all dragon parts.
+    </p>
   </div>
 
   <div class="no-mobile">
@@ -54,7 +75,7 @@
       <img src="https://static.dragonmainland.io/img/112a8a90d923770208cea92a67bd06b5.png" alt="DM logo" />
       <ul>
         <li><a href="#">Dragon Checker <span class="pill">BETA</span></a></li>
-        <li><a href="#">Breeding Simulator</a></li>
+        <li><a href="https://dragonmainland.zone/breeding-simulator" target="_blank">Breeding Simulator</a></li>
         <li><a href="#" class="tooltipped" data-position="right" data-tooltip="Coming soon!">Better Markeplace</a></li>
       </ul>
       <div class="creator">
@@ -94,13 +115,14 @@
               <div class="dragon_body-wing"></div>
               <div class="dragon_body-totem"></div>
               <div class="dragon_body-eyes"></div>
+              <div class="dragon_body-egg"></div>
             </div>
           </div>
           <div class="card-content">
             <div class="card-title activator grey-text text-darken-4">
               <span class="dragon_number"></span>
               <span class="dragon_tag hide"></span>
-              <a href="#" class="link-out"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" target="_blank" class="link-out"><i class="fas fa-external-link-alt"></i></a>
               <i class="fas fa-bars right"></i>
             </div>
 
@@ -159,7 +181,7 @@
                 <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
                   <p class="dragon_skill1-shield"></p>
                 </button>
-                <button class="btn-floating waves-effect waves-light green skill_stats skill_stats-level z-depth-0">
+                <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
                   <p class="dragon_skill1-level"></p>
                 </button>
               </div>
@@ -168,6 +190,10 @@
                 <p class="dragon_skill-part1"></p>
                 <p class="dragon_skill1-description"></p>
               </div>
+
+              <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                <div class="dragon_skill1-type"></div>
+              </button>
             </div>
           </div>
 
@@ -184,7 +210,7 @@
                 <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
                   <p class="dragon_skill2-shield"></p>
                 </button>
-                <button class="btn-floating waves-effect waves-light green skill_stats skill_stats-level z-depth-0">
+                <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
                   <p class="dragon_skill2-level"></p>
                 </button>
               </div>
@@ -193,6 +219,10 @@
                 <p class="dragon_skill-part2"></p>
                 <p class="dragon_skill2-description"></p>
               </div>
+
+              <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                <div class="dragon_skill2-type"></div>
+              </button>
             </div>
           </div>
 
@@ -209,7 +239,7 @@
                 <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
                   <p class="dragon_skill3-shield"></p>
                 </button>
-                <button class="btn-floating waves-effect waves-light green skill_stats skill_stats-level z-depth-0">
+                <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
                   <p class="dragon_skill3-level"></p>
                 </button>
               </div>
@@ -218,6 +248,10 @@
                 <p class="dragon_skill-part3"></p>
                 <p class="dragon_skill3-description"></p>
               </div>
+
+              <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                <div class="dragon_skill3-type"></div>
+              </button>
             </div>
           </div>
 
@@ -234,7 +268,7 @@
                 <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
                   <p class="dragon_skill4-shield"></p>
                 </button>
-                <button class="btn-floating waves-effect waves-light green skill_stats skill_stats-level z-depth-0">
+                <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
                   <p class="dragon_skill4-level"></p>
                 </button>
               </div>
@@ -243,6 +277,10 @@
                 <p class="dragon_skill-part4"></p>
                 <p class="dragon_skill4-description"></p>
               </div>
+
+              <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                <div class="dragon_skill4-type"></div>
+              </button>
             </div>
           </div>
         </div>
