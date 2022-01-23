@@ -263,6 +263,20 @@ a {
   margin-right: 15px;
 }
 
+.dragon_part-pill {
+  background-color: RGBA(0, 0, 0, .7);
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 9px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  vertical-align: text-bottom;
+}
+
 .skill_stats {
   border: 3px solid white !important;
   line-height: initial !important;

@@ -187,7 +187,7 @@ $(".getInput").click(function() {
       $(".dragon_skill1-description").html(dragons.data.skillNo1.des);
       $(".dragon_skill1-damage").html(dragons.data.skillNo1.damage);
       $(".dragon_skill1-shield").html(dragons.data.skillNo1.shield);
-      $(".dragon_skill1-level").html(dragons.data.skillNo1.level - 1 + '▲');
+      $(".dragon_skill1-level").html(dragons.data.skillNo1.level - 1 + ' ⇧');
       $(".dragon_skill-part1").html(dragons.data.parts[2].dnaNameEn);
 
       $(".dragon_skill2").html(dragons.data.skillNo2.name);
@@ -195,7 +195,7 @@ $(".getInput").click(function() {
       $(".dragon_skill2-description").html(dragons.data.skillNo2.des);
       $(".dragon_skill2-damage").html(dragons.data.skillNo2.damage);
       $(".dragon_skill2-shield").html(dragons.data.skillNo2.shield);
-      $(".dragon_skill2-level").html(dragons.data.skillNo2.level - 1 + '▲');
+      $(".dragon_skill2-level").html(dragons.data.skillNo2.level - 1 + ' ⇧');
       $(".dragon_skill-part2").html(dragons.data.parts[3].dnaNameEn);
 
       $(".dragon_skill3").html(dragons.data.skillNo3.name);
@@ -203,7 +203,7 @@ $(".getInput").click(function() {
       $(".dragon_skill3-description").html(dragons.data.skillNo3.des);
       $(".dragon_skill3-damage").html(dragons.data.skillNo3.damage);
       $(".dragon_skill3-shield").html(dragons.data.skillNo3.shield);
-      $(".dragon_skill3-level").html(dragons.data.skillNo3.level - 1 + '▲');
+      $(".dragon_skill3-level").html(dragons.data.skillNo3.level - 1 + ' ⇧');
       $(".dragon_skill-part3").html(dragons.data.parts[4].dnaNameEn);
 
       $(".dragon_skill4").html(dragons.data.skillNo4.name);
@@ -211,7 +211,7 @@ $(".getInput").click(function() {
       $(".dragon_skill4-description").html(dragons.data.skillNo4.des);
       $(".dragon_skill4-damage").html(dragons.data.skillNo4.damage);
       $(".dragon_skill4-shield").html(dragons.data.skillNo4.shield);
-      $(".dragon_skill4-level").html(dragons.data.skillNo4.level - 1 + '▲');
+      $(".dragon_skill4-level").html(dragons.data.skillNo4.level - 1 + ' ⇧');
       $(".dragon_skill-part4").html(dragons.data.parts[5].dnaNameEn);
 
 
