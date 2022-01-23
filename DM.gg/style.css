@@ -1,1 +1,422 @@
-[class~=alert_dismiss],[class~=change_dismiss]{float:right;}[class~=alert_dismiss],[class~=change_dismiss]{margin-top:-1.875pc;}[class~=alert_content] button{border-left-width:0;}[class~=change_trigger],#toast-container,[class~=alert_trigger]{top:.104166667in;}[class~=change_dismiss],[class~=alert_dismiss]{cursor:pointer;}[class~=dragon_showCase] [class~=card] [class~=card-reveal]{padding-left:.1875in;}[class~=dragon_showCase] [class~=card] [class~=card-reveal]{padding-bottom:.1875in;}[class~=alert_content] button{border-bottom-width:0;}#toast-container{right:initial;}[class~=side_bar] ul li a{padding-left:.208333333in;}[class~=alert_content] button{border-right-width:0;}[class~=change_trigger],.change_message,[class~=alert_trigger],[class~=alert_message]{position:fixed;}[class~=dragon_showCase] [class~=card]{border-radius:10px !important;}#toast-container{left:calc(50% - 100px);}[class~=alert_trigger],[class~=change_trigger]{right:10px;}#toast-container{max-width:4.6875in !important;}[class~=dragon_showCase] [class~=card] [class~=card-reveal]{padding-right:.1875in;}[class~=side_bar] ul li a{padding-bottom:11.25pt;}[class~=alert_content] button{border-top-width:0;}[class~=alert_content] button{border-left-style:none;}[class~=side_bar] ul li a:hover{background-color:white;}#parallax{position:relative;}[class~=alert_content] button{border-bottom-style:none;}.change_trigger{right:60px;}[class~=alert_message],.change_message{color:white;}[class~=side_bar] ul li a,[class~=dragon_showCase] [class~=card]{padding-right:3.75pt;}.change_message,[class~=alert_message],[class~=bg_overlay]{background-color:rgba(0,0,0,.2);}[class~=alert_message],.change_message{border-radius:.625pc;}[class~=alert_message],.change_message{right:0;}[class~=dragon_showCase] [class~=card]{padding-left:3.75pt;}[class~=side_bar] ul li a{padding-top:11.25pt;}.change_message,[class~=alert_message]{padding-left:15pt;}[class~=alert_message],.change_message{padding-bottom:0;}.change_message,[class~=alert_message]{padding-right:15pt;}[class~=dragon_showCase] [class~=card]{padding-bottom:3.75pt;}.change_message,[class~=alert_message]{padding-top:0;}[class~=alert_message],.change_message{z-index:10;}[class~=bg_overlay],[class~=side_bar] ul li a,[class~=no-mobile],#parallax{width:100%;}#parallax,[class~=no-mobile],.side_bar,[class~=bg_overlay]{height:100vh;}[class~=dragon_showCase] [class~=card] [class~=card-reveal]{padding-top:.1875in;}[class~=alert_content] button{border-right-style:none;}[class~=small-text]{font-size:.104166667in;}[class~=alert_content] button{border-top-style:none;}.side_bar,[class~=bg_overlay],[class~=no-mobile]{position:fixed;}[class~=bg_overlay]{z-index:-1;}[class~=no-mobile]{display:none;}[class~=no-mobile]{z-index:2;}[class~=no-mobile]{background-color:white;}.side_bar{width:150pt;}[class~=dragon_number],.side_bar{display:inline-block;}[class~=alert_content] button{border-left-color:currentColor;}.side_bar{background-color:rgba(255,255,255,.5);}[class~=alert_content] button{border-bottom-color:currentColor;}[class~=alert_content] button{border-right-color:currentColor;}[class~=alert_content] button{border-top-color:currentColor;}.side_bar{padding-left:0;}[class~=alert_content] button{border-image:none;}.side_bar{padding-bottom:1.875pc;}#parallax{background-image:url("assets/Front.png"),url("assets/Mid.png"),url("assets/Back.png");}[class~=side_bar] ul li a{display:block;}[class~=alert_content] button{background-color:transparent;}.side_bar{padding-right:0;}.side_bar{padding-top:1.875pc;}#parallax{background-repeat:no-repeat;}[class~=side_bar] ul li a{color:black;}[class~=dragon_number],.side_bar,[class~=dragon_tag]{text-align:center;}.main_content{width:calc(100% - 200px);}*{font-family:Lato;}.main_content{margin-left:2.083333333in;}.main_content{padding-left:1.25pc;}[class~=alert_content] button,a,[class~=pill],[class~=dragon_number],[class~=dragon_tag]{color:white;}[class~=dragon_number],[class~=alert_content] button,[class~=dragon_tag]{font-weight:bold;}[class~=dragon_showCase] [class~=card]{padding-top:3.75pt;}.main_content{padding-bottom:1.25pc;}#parallax{background-position:center;}.main_content{padding-right:1.25pc;}.main_content{padding-top:1.25pc;}[class~=side_bar] ul li a{text-align:left;}[class~=alert_content] button{cursor:pointer;}[class~=pill]{background-color:red;}[class~=pill]{border-radius:.03125in;}[class~=dragon_number],[class~=pill],[class~=dragon_tag]{padding-left:3.75pt;}[class~=pill]{padding-bottom:.1875pc;}[class~=pill],[class~=dragon_number],[class~=dragon_tag]{padding-right:3.75pt;}[class~=pill]{padding-top:.1875pc;}#parallax{background-position:50% 50%;}[class~=pill]{font-size:8px;}[class~=pill]{vertical-align:top;}[class~=brand-logo] img{max-width:1.25in;}[class~=dragon_tag],[class~=dragon_number]{border-radius:.052083333in;}[class~=dragon_number],[class~=dragon_tag]{min-width:52.5pt;}[class~=dragon_number],[class~=dragon_tag]{padding-bottom:1.5pt;}[class~=dragon_tag],[class~=dragon_number]{padding-top:1.5pt;}[class~=dragon_tag]{display:inline-block;}[class~=dragon_type-fire]{background-color:#d58047;}[class~=dragon_type-water]{background-color:#44a3cf;}[class~=dragon_type-storm]{background-color:#53b372;}.dragon_type-rock{background-color:#926b59;}[class~=dragon_type-thunder]{background-color:#d5b32d;}.dragon_tab-genesis{background-color:#8247d5;}[class~=dragon_tab-rare]{background-color:#12b3a8;}@keyframes example{0%{background-color:red;}25%{background-color:yellow;}50%{background-color:blue;}100%{background-color:green;}}.dragon_tab-mystic{background-color:red;}.dragon_tab-mystic{animation-name:example;}.dragon_tab-mystic{animation-duration:4s;}.dragon_tab-mystic{animation-iteration-count:infinite;}[class~=dragon_body],[class~=dragon_body] [class~=activator]{height:300px;}[class~=dragon_tab-negative]{background-color:#707a83;}[class~=dragon_body-egg],[class~=dragon_body]{display:block;}[class~=dragon_body-egg]{height:150px;}[class~=dragon_body-egg]{width:112.5pt;}[class~=dragon_body-egg],[class~=dragon_body] [class~=activator]{right:0;}[class~=dragon_body] [class~=activator]{width:300px;}[class~=dragon_body-egg]{background-size:1.5625in;}[class~=dragon_body-egg],[class~=creator]{position:absolute;}[class~=dragon_body-egg]{margin-left:auto;}[class~=dragon_body-egg]{margin-bottom:0;}[class~=dragon_body-egg]{margin-right:auto;}[class~=dragon_body-egg]{margin-top:0;}[class~=dragon_body-egg]{background-repeat:no-repeat;}[class~=link-out]{display:inline-block;}[class~=link-out]{color:black;}[class~=creator]{bottom:10px;}[class~=creator]{left:7.5pt;}[class~=detail_section]{border-bottom-width:1px;}[class~=detail_section]{border-bottom-style:solid;}[class~=detail_section]{border-bottom-color:rgba(0,0,0,.5);}[class~=detail_section]{border-image:none;}[class~=detail_section]{font-size:15pt;}[class~=detail_section]{padding-left:.104166667in;}[class~=detail_section]{padding-bottom:0;}[class~=detail_section]{padding-right:.104166667in;}[class~=creator] img{height:30pt;}[class~=detail_section]{padding-top:0;}[class~=skill_stats]{border-left-width:2.25pt !important;}[class~=skill_stats]{border-bottom-width:2.25pt !important;}[class~=skill_stats]{border-right-width:2.25pt !important;}[class~=skill_stats]{border-top-width:2.25pt !important;}[class~=skill_stats]{border-left-style:solid !important;}[class~=dragon_body] [class~=activator]{left:0;}[class~=skill_stats]{border-bottom-style:solid !important;}[class~=skill_stats]{border-right-style:solid !important;}[class~=skill_stats]{border-top-style:solid !important;}[class~=skill_stats]{border-left-color:white !important;}[class~=skill_stats]{border-bottom-color:white !important;}[class~=skill_stats]{border-right-color:white !important;}[class~=skill_stats]{border-top-color:white !important;}[class~=skill_stats]{border-image:none !important;}[class~=skill_stats]{line-height:initial !important;}[class~=skill_stats]{position:absolute !important;}[class~=skill_stats-damage],.skill_stats-energy{left:-.625pc;}.skill_stats-energy{top:-7.5pt;}[class~=creator] img{border-radius:1.25pc;}[class~=skill_stats-damage],[class~=skill_stats-shield]{top:1.5625in;}[class~=skill_stats-damage]{border-radius:0 .208333333in !important;}[class~=dragon_body] [class~=activator]{background-size:300px;}[class~=skill_stats-shield]{right:-10px;}[class~=skill_stats-shield]{border-radius:20px 0 !important;}.skill_stats-level{right:-3.75pt;}.skill_stats-level{top:-3.75pt;}.skill_stats-level{border-radius:.052083333in;}.skill_stats-level{height:35px !important;}.skill_stats-level{width:2.1875pc !important;}.skill_stats-level{border-left-width:1.5pt !important;}.skill_stats-level{border-bottom-width:1.5pt !important;}.skill_stats-level{border-right-width:1.5pt !important;}[class~=dragon_body] [class~=activator]{position:absolute;}.skill_stats-level{border-top-width:1.5pt !important;}.skill_stats-level{border-left-style:solid !important;}.skill_stats-level{border-bottom-style:solid !important;}.skill_stats-level{border-right-style:solid !important;}.skill_stats-level{border-top-style:solid !important;}.skill_stats-level{border-left-color:white !important;}.skill_stats-level{border-bottom-color:white !important;}.skill_stats-level{border-right-color:white !important;}.skill_stats-level{border-top-color:white !important;}.skill_stats-level{border-image:none !important;}[class~=dragon_skill-title],[class~=dragon_skill-part4],.skill_stats-level,[class~=dragon_skill-part2],[class~=dragon_skill-part1],.dragon_skill-part3{text-align:center;}[class~=dragon_skill-title]{font-weight:bold;}[class~=dragon_skill-title]{font-size:.208333333in;}[class~=skill_spacer]{margin-top:1.25pc;}[class~=dragon_skill-part4],[class~=dragon_skill-part1],[class~=dragon_skill-part2],.dragon_skill-part3{margin-bottom:.625pc !important;}[class~=dragon_skill-part2],[class~=dragon_skill-part4],[class~=dragon_skill-part1],.dragon_skill-part3{text-transform:uppercase;}[class~=dragon_skill-part1],[class~=dragon_skill-part4],.dragon_skill-part3,[class~=dragon_skill-part2]{font-size:.625pc;}[class~=creator] div{display:inline-block;}[class~=dragon_body] [class~=activator]{margin-left:auto;}[class~=dragon_body] [class~=activator]{margin-bottom:0;}[class~=dragon_card]{border-radius:7.5pt !important;}[class~=dragon_card-content4],[class~=dragon_card-content3],[class~=dragon_card-content2],[class~=dragon_card-content1]{padding-left:7.5pt !important;}[class~=dragon_card-content1],[class~=dragon_card-content2],[class~=dragon_card-content3],[class~=dragon_card-content4]{padding-bottom:7.5pt !important;}[class~=dragon_card-content2],[class~=dragon_card-content1],[class~=dragon_card-content4],[class~=dragon_card-content3]{padding-right:7.5pt !important;}[class~=dragon_card-content4],[class~=dragon_card-content2],[class~=dragon_card-content1],[class~=dragon_card-content3]{padding-top:7.5pt !important;}[class~=dragon_card-content1]{border-radius:.104166667in;}[class~=dragon_card-content1]{border-radius:.104166667in !important;}[class~=dragon_card-content1]{border-left-width:.052083333in;}[class~=dragon_card-content1]{border-bottom-width:.052083333in;}[class~=dragon_card-content1]{border-right-width:.052083333in;}[class~=dragon_card-content1]{border-top-width:.052083333in;}[class~=dragon_card-content1]{border-left-style:solid;}[class~=dragon_card-content1]{border-bottom-style:solid;}[class~=dragon_card-content1]{border-right-style:solid;}[class~=dragon_card-content1]{border-top-style:solid;}[class~=dragon_card-content1]{border-left-color:white;}[class~=dragon_card-content1]{border-bottom-color:white;}[class~=dragon_card-content1]{border-right-color:white;}[class~=dragon_card-content1]{border-top-color:white;}[class~=dragon_card-content1]{border-image:none;}[class~=dragon_card-content2],[class~=dragon_card-content1],[class~=dragon_card-content3],[class~=dragon_card-content4]{height:150px;}[class~=dragon_card-content2]{border-radius:.104166667in;}[class~=dragon_card-content2]{border-radius:.104166667in !important;}[class~=dragon_card-content2]{border-left-width:.052083333in;}[class~=dragon_card-content2]{border-bottom-width:.052083333in;}[class~=dragon_card-content2]{border-right-width:.052083333in;}[class~=dragon_card-content2]{border-top-width:.052083333in;}[class~=dragon_card-content2]{border-left-style:solid;}[class~=dragon_card-content2]{border-bottom-style:solid;}[class~=dragon_card-content2]{border-right-style:solid;}[class~=dragon_card-content2]{border-top-style:solid;}[class~=dragon_card-content2]{border-left-color:white;}[class~=dragon_card-content2]{border-bottom-color:white;}[class~=dragon_card-content2]{border-right-color:white;}[class~=dragon_card-content2]{border-top-color:white;}[class~=dragon_card-content2]{border-image:none;}[class~=dragon_card-content3]{border-radius:.104166667in;}[class~=dragon_card-content3]{border-radius:.104166667in !important;}[class~=creator] div{font-weight:bold;}[class~=dragon_card-content3]{border-left-width:.052083333in;}[class~=creator] div{margin-left:.052083333in;}[class~=dragon_card-content3]{border-bottom-width:.052083333in;}[class~=dragon_card-content3]{border-right-width:.052083333in;}[class~=dragon_body] [class~=activator]{margin-right:auto;}[class~=dragon_card-content3]{border-top-width:.052083333in;}[class~=dragon_card-content3]{border-left-style:solid;}[class~=dragon_card-content3]{border-bottom-style:solid;}[class~=dragon_card-content3]{border-right-style:solid;}[class~=dragon_card-content3]{border-top-style:solid;}[class~=skill_stats] p{margin-left:initial;}[class~=dragon_card-content3]{border-left-color:white;}[class~=dragon_card-content3]{border-bottom-color:white;}[class~=dragon_card-content3]{border-right-color:white;}[class~=dragon_body] [class~=activator]{margin-top:0;}[class~=dragon_card-content3]{border-top-color:white;}[class~=dragon_card-content3]{border-image:none;}[class~=dragon_card-content4]{border-radius:.104166667in;}[class~=dragon_card-content4]{border-radius:.104166667in !important;}[class~=dragon_card-content4]{border-left-width:.052083333in;}[class~=dragon_card-content4]{border-bottom-width:.052083333in;}[class~=dragon_card-content4]{border-right-width:.052083333in;}[class~=dragon_card-content4]{border-top-width:.052083333in;}[class~=dragon_card-content4]{border-left-style:solid;}[class~=dragon_card-content4]{border-bottom-style:solid;}[class~=dragon_card-content4]{border-right-style:solid;}[class~=dragon_card-content4]{border-top-style:solid;}[class~=dragon_card-content4]{border-left-color:white;}[class~=dragon_card-content4]{border-bottom-color:white;}[class~=dragon_card-content4]{border-right-color:white;}[class~=dragon_card-content4]{border-top-color:white;}[class~=dragon_card-content4]{border-image:none;}[class~=dragon_card-contentFire]{background:#d58047;}[class~=dragon_card-contentFire]{background:linear-gradient(0deg,rgba(213,128,71,1) 0%,rgba(213,128,71,0) 35%);}[class~=dragon_card-contentWater]{background:#44a3cf;}[class~=dragon_card-contentWater]{background:linear-gradient(0deg,rgba(68,163,207,1) 0%,rgba(68,163,207,0) 35%);}[class~=dragon_card-contentStorm]{background:#53b372;}[class~=dragon_card-contentStorm]{background:linear-gradient(0deg,rgba(83,179,114,1) 0%,rgba(83,179,114,0) 35%);}[class~=dragon_card-contentRock]{background:#926b59;}[class~=dragon_card-contentRock]{background:linear-gradient(0deg,rgba(146,107,89,1) 0%,rgba(146,107,89,0) 35%);}.dragon_card-contentThunder{background:#d5b32d;}.dragon_card-contentThunder{background:linear-gradient(0deg,rgba(213,179,45,1) 0%,rgba(213,179,45,0) 35%);}[class~=skill_stats-type]{height:.208333333in;}[class~=card-content] [class~=detail-icon],[class~=card-reveal] [class~=detail_icon-inline][class~=detail-icon]{display:inline-block;}[class~=skill_stats-type]{width:20px;}[class~=skill_stats-type]{border-left-width:.020833333in !important;}[class~=skill_stats-type]{border-bottom-width:.020833333in !important;}[class~=skill_stats-type]{border-right-width:.020833333in !important;}[class~=skill_stats-type]{border-top-width:.020833333in !important;}[class~=skill_stats-type]{border-left-style:solid !important;}[class~=skill_stats-type]{border-bottom-style:solid !important;}[class~=skill_stats-type]{border-right-style:solid !important;}[class~=skill_stats-type]{border-top-style:solid !important;}[class~=skill_stats-type]{border-left-color:white !important;}[class~=skill_stats-type]{border-bottom-color:white !important;}[class~=skill_stats-type]{border-right-color:white !important;}[class~=skill_stats-type]{border-top-color:white !important;}[class~=skill_stats-type]{border-image:none !important;}[class~=skill_stats-type]{left:0;}[class~=skill_stats-type]{right:0;}[class~=skill_stats-type]{margin-left:auto;}[class~=skill_stats-type]{margin-bottom:0;}[class~=skill_stats-type]{margin-right:auto;}[class~=skill_stats-type]{margin-top:0;}[class~=skill_stats-type]{bottom:-5.25pt;}[class~=dragon_skill4-typeFire],[class~=dragon_skill2-typeFire],[class~=dragon_skill1-typeFire],.dragon_skill3-typeFire{background-image:url("assets/type_Fire.png");}[class~=skill_stats] p{margin-bottom:initial;}[class~=dragon_skill1-typeWater],[class~=dragon_skill3-typeWater],[class~=dragon_skill1-typeStorm],[class~=dragon_skill1-typeRock],.dragon_skill2-typeRock,[class~=dragon_skill4-typeThunder],[class~=dragon_skill3-typeThunder],.dragon_skill1-typeThunder,.dragon_skill3-typeFire,[class~=dragon_skill4-typeWater],[class~=dragon_skill2-typeThunder],[class~=dragon_skill2-typeWater],.dragon_skill4-typeStorm,[class~=dragon_skill4-typeRock],[class~=dragon_skill1-typeFire],[class~=dragon_skill3-typeStorm],[class~=dragon_skill2-typeFire],[class~=dragon_skill3-typeRock],[class~=dragon_skill4-typeFire],[class~=dragon_skill2-typeStorm]{background-size:1pc;}[class~=dragon_skill4-typeWater],[class~=dragon_skill3-typeWater],[class~=dragon_skill1-typeWater],[class~=dragon_skill2-typeWater]{background-image:url("assets/type_Water.png");}[class~=card-content] [class~=detail-icon],[class~=card-reveal] [class~=detail_icon-inline][class~=detail-icon]{margin-right:15px;}[class~=dragon_skill2-typeStorm],[class~=dragon_skill3-typeStorm],[class~=dragon_skill1-typeStorm],.dragon_skill4-typeStorm{background-image:url("assets/type_Storm.png");}[class~=skill_stats] p{margin-right:initial;}[class~=dragon_skill3-typeRock],[class~=dragon_skill4-typeRock],.dragon_skill2-typeRock,[class~=dragon_skill1-typeRock]{background-image:url("assets/type_Rock.png");}[class~=dragon_skill3-typeThunder],[class~=dragon_skill2-typeThunder],[class~=dragon_skill4-typeThunder],.dragon_skill1-typeThunder{background-image:url("assets/type_Thunder.png");}[class~=skill_stats] p{margin-top:initial;}[class~=skill_stats] p{font-weight:bold;}.skill_stats-type div{height:2.5pc;}@media only screen and (max-width: 1100px){[class~=no-mobile]{display:block;}}
+* {
+  font-family: Lato;
+}
+
+a {
+  color: white;
+}
+
+.alert_dismiss,
+.change_dismiss {
+  float: right;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.alert_trigger,
+.change_trigger {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.change_trigger {
+  right: 60px;
+}
+
+.alert_message,
+.change_message {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+  position: fixed;
+  border-radius: 10px;
+  right: 0;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.alert_content button {
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#toast-container {
+  top: 10px;
+  right: initial;
+  left: calc(50% - 100px);
+  max-width: 450px !important;
+}
+
+.brand-logo img {
+  max-width: 120px;
+}
+
+.bg_overlay {
+  background-color: RGBA(0, 0, 0, .2);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.no-mobile {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+}
+
+.side_bar {
+  position: fixed;
+  width: 200px;
+  display: inline-block;
+  background-color: RGBA(255, 255, 255, .5);
+  height: 100vh;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main_content {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.side_bar ul li a {
+  padding: 15px 5px;
+  width: 100%;
+  display: block;
+  padding-left: 20px;
+  color: black;
+  text-align: left;
+}
+
+.side_bar ul li a:hover {
+  background-color: white;
+}
+
+.pill {
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 8px;
+  vertical-align: top;
+}
+
+#parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:
+    url('assets/Front.png'),
+    url('assets/Mid.png'),
+    url('assets/Back.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+.dragon_number,
+.dragon_tag {
+  border-radius: 5px;
+  min-width: 70px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+.dragon_showCase .card {
+  border-radius: 10px !important;
+  padding: 5px;
+}
+
+.dragon_showCase .card .card-reveal {
+  padding: 18px;
+}
+
+.dragon_type-fire {
+  background-color: #d58047;
+}
+
+.dragon_type-water {
+  background-color: #44a3cf;
+}
+
+.dragon_type-storm {
+  background-color: #53b372;
+}
+
+.dragon_type-rock {
+  background-color: #926b59;
+}
+
+.dragon_type-thunder {
+  background-color: #d5b32d;
+}
+
+.dragon_tab-genesis {
+  background-color: #8247d5;
+}
+
+.dragon_tab-rare {
+  background-color: #12b3a8;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: green;
+  }
+}
+
+.dragon_tab-mystic {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.dragon_tab-negative {
+  background-color: #707a83;
+}
+
+.dragon_body {
+  height: 350px;
+  display: block;
+}
+
+.dragon_body .activator {
+  height: 300px;
+  width: 300px;
+  left: 0;
+  right: 0;
+  background-size: 300px;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.dragon_body-egg {
+  height: 150px;
+  width: 150px;
+  right: 0;
+  background-size: 150px;
+  position: absolute;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.link-out {
+  display: inline-block;
+  color: black;
+}
+
+.creator img {
+  height: 40px;
+  border-radius: 20px;
+}
+
+.creator {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.creator div {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.detail_section {
+  border-bottom: 1px solid RGBA(0, 0, 0, 0.5);
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.card-reveal .detail_icon-inline.detail-icon,
+.card-content .detail-icon {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.skill_stats {
+  border: 3px solid white !important;
+  line-height: initial !important;
+  position: absolute !important;
+}
+
+.skill_stats p {
+  margin: initial;
+  font-weight: bold;
+}
+
+.skill_stats-energy {
+  left: -10px;
+  top: -10px;
+}
+
+.skill_stats-damage {
+  left: -10px;
+  top: 140px;
+  border-radius: 0 20px !important;
+}
+
+.skill_stats-shield {
+  right: -10px;
+  top: 140px;
+  border-radius: 20px 0 !important;
+}
+
+.skill_stats-level {
+  right: -5px;
+  top: -5px;
+  border-radius: 5px;
+  height: 35px !important;
+  width: 35px !important;
+  border: 2px solid white !important;
+  text-align: center;
+}
+
+.dragon_skill-title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.skill_spacer {
+  margin-top: 20px;
+}
+
+.dragon_skill-part1,
+.dragon_skill-part2,
+.dragon_skill-part3,
+.dragon_skill-part4 {
+  margin-bottom: 10px !important;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+}
+
+.dragon_card {
+  border-radius: 10px !important;
+}
+
+.dragon_card-content1,
+.dragon_card-content2,
+.dragon_card-content3,
+.dragon_card-content4 {
+  padding: 10px !important;
+  border-radius: 10px;
+  border: 5px solid white;
+  border-radius: 10px !important;
+  height: 150px;
+}
+
+.dragon_card-contentFire {
+  background: rgb(213, 128, 71);
+  background: linear-gradient(0deg, rgba(213, 128, 71, 1) 0%, rgba(213, 128, 71, 0) 35%);
+}
+
+.dragon_card-contentWater {
+  background: rgb(68, 163, 207);
+  background: linear-gradient(0deg, rgba(68, 163, 207, 1) 0%, rgba(68, 163, 207, 0) 35%);
+}
+
+.dragon_card-contentStorm {
+  background: rgb(83, 179, 114);
+  background: linear-gradient(0deg, rgba(83, 179, 114, 1) 0%, rgba(83, 179, 114, 0) 35%);
+}
+
+.dragon_card-contentRock {
+  background: rgb(146, 107, 89);
+  background: linear-gradient(0deg, rgba(146, 107, 89, 1) 0%, rgba(146, 107, 89, 0) 35%);
+}
+
+.dragon_card-contentThunder {
+  background: rgb(213, 179, 45);
+  background: linear-gradient(0deg, rgba(213, 179, 45, 1) 0%, rgba(213, 179, 45, 0) 35%);
+}
+
+.skill_stats-type {
+  height: 20px;
+  width: 20px;
+  border: 2px solid white !important;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -7px;
+}
+
+.skill_stats-type div {
+  height: 40px;
+}
+
+.dragon_skill1-typeFire,
+.dragon_skill2-typeFire,
+.dragon_skill3-typeFire,
+.dragon_skill4-typeFire {
+  background-image: url('assets/type_Fire.png');
+  background-size: 16px;
+}
+
+.dragon_skill1-typeWater,
+.dragon_skill2-typeWater,
+.dragon_skill3-typeWater,
+.dragon_skill4-typeWater {
+  background-image: url('assets/type_Water.png');
+  background-size: 16px;
+}
+
+.dragon_skill1-typeStorm,
+.dragon_skill2-typeStorm,
+.dragon_skill3-typeStorm,
+.dragon_skill4-typeStorm {
+  background-image: url('assets/type_Storm.png');
+  background-size: 16px;
+}
+
+.dragon_skill1-typeRock,
+.dragon_skill2-typeRock,
+.dragon_skill3-typeRock,
+.dragon_skill4-typeRock {
+  background-image: url('assets/type_Rock.png');
+  background-size: 16px;
+}
+
+.dragon_skill1-typeThunder,
+.dragon_skill2-typeThunder,
+.dragon_skill3-typeThunder,
+.dragon_skill4-typeThunder {
+  background-image: url('assets/type_Thunder.png');
+  background-size: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .no-mobile {
+    display: block;
+  }
+}

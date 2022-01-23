@@ -1,1 +1,844 @@
-const _0x30b095=_0x403b;function _0x3779(){const _0x5dfd76=['skillNo2','activator\x20dragon_body-body\x20dragon-','.dragon_skill-part2','.sidenav','.dragon_skill4-type','.dragon_skill2','defend','writeText','.dragon_skill1-type','.dragon_health','.dragon_skill2-description','data','.dragon_level','parts','.dragon_skill4-shield','.dragon_body-horn','.dragon_skill3-description','card-content\x20dragon_card-content2\x20dragon_card-contentWater','father','.dragon_skill4-energy','dragon_skill3-type\x20dragon_skill3-typeRock','card-content\x20dragon_card-content4\x20dragon_card-contentRock','card-content\x20dragon_card-content3\x20dragon_card-contentStorm','dragon_skill3-type\x20dragon_skill3-typeThunder','click','dragon_tag\x20dragon_tab-negative','querySelectorAll','clipboard','.dragon_skill2-type','dragon_tag\x20dragon_tab-mystic','dragon_skill1-type\x20dragon_skill1-typeFire','dragon_skill3-type\x20dragon_skill3-typeStorm','.dragon_skill3-level','card-content\x20dragon_card-content2\x20dragon_card-contentRock','.dragon_parts-horn','2335590UNwKBd','activator\x20dragon_body-totem\x20dragon-','.dragon_body-body','log','dragon_number\x20dragon_type-fire','dragon_skill2-type\x20dragon_skill2-typeFire','.dragon_card-content4','removeClass','Negative\x20mutation','dragon_number\x20dragon_type-water','2392lwLuEG','innerHeight','.dragon_breedCount','val','30grtJRm','dnaNameEn','mutation','level','clientX','getElementById','dragon_body-egg\x20dragon-WaterDragonEgg','health','shield','dragon_skill1-type\x20dragon_skill1-typeWater','126068HoSFGR','.dragon_skill4-damage','dragon_tag\x20dragon_tab-rare','hide','ajax','backgroundPosition','card-content\x20dragon_card-content2\x20dragon_card-contentStorm','dragon_body\x20dragon_card-contentRock','mother','.dragon_skill-part3','Rare','dragon_body-egg\x20dragon-FireDragonEgg','attr','card-content\x20dragon_card-content3\x20dragon_card-contentRock','setSelectionRange','card-content\x20dragon_card-content3\x20dragon_card-contentFire','.dragon_attack','dragon_skill2-type\x20dragon_skill2-typeThunder','.dragon_skill2-energy','Mystic','dragon_skill2-type\x20dragon_skill2-typeWater','activator\x20dragon_body-horn\x20dragon-','speed','.dragon_skill4-level','.change_trigger','application/json;\x20charset=utf-8','.dragon_body-wing','clazz','dragon_body\x20dragon_card-contentStorm','.alert_trigger','class','.dragon_skill1-shield','.dragon_defense','intellect','name','dragon_number\x20dragon_type-storm','dragon_skill4-type\x20dragon_skill4-typeWater','dragon_body\x20dragon_card-contentThunder','.dragon_number','.alert_content','innerWidth','dragon_skill2-type\x20dragon_skill2-typeRock','damage','.dragon_parts-tail','dragon_body\x20dragon_card-contentFire','.dragon_body','card-content\x20dragon_card-content2\x20dragon_card-contentThunder','299308ZIbBAM','.dragon_card-content1','replace','.dragon_parts-wing','12oTBzOl','html','.dragon_body-egg','622566eZYYPq','dragon_skill1-type\x20dragon_skill1-typeRock','addEventListener','breedCount','16079TvjhqG','.dragon_skill2-level','#parallax','.dragon_body-eyes','attack','.dragon_lifeForce','624668CVkTzG','activator\x20dragon_body-tail\x20dragon-','Tooltip','.tooltipped','dragon_body\x20dragon_card-contentWater','.change_message','dragon_skill2-type\x20dragon_skill2-typeStorm','querySelector','boneCount','{\x22no\x22:\x22','card-content\x20dragon_card-content4\x20dragon_card-contentWater','dragon_skill4-type\x20dragon_skill4-typeFire','.dragon_skill-part4','.dragon_speed','.dragon_body-tail','des','.dragon_tag','10jWbFKV','.dragon_card-content3','clientY','skillNo4','dragon_skill3-type\x20dragon_skill3-typeWater','.dragon_card-content2','.dragon_skill3-shield','dragon_tag\x20dragon_tab-genesis','json','.dragon_skill1-damage','dragon_body-egg\x20dragon-StormDragonEgg','status','addClass','wallet','card-content\x20dragon_card-content1\x20dragon_card-contentThunder','5238387pfHhXu','.link-out','dragon_skill1-type\x20dragon_skill1-typeStorm','dragon_skill1-type\x20dragon_skill1-typeThunder','.dragon_skill1','dragon_skill4-type\x20dragon_skill4-typeStorm','skillNo3','.dragon_skill-part1','dragon_number\x20dragon_type-rock','.dragon_body-totem','.alert_dismiss','card-content\x20dragon_card-content1\x20dragon_card-contentStorm','.getInput','.dragon_skill2-damage','.dragon_skill3-type','skillNo1','select','card-content\x20dragon_card-content4\x20dragon_card-contentFire','.dragonNo','energy','activator\x20dragon_body-eyes\x20dragon-','https://dragonmainland.io/api/game/hero/getHeroDetailByNo','.dragon_parts-ear'];_0x3779=function(){return _0x5dfd76;};return _0x3779();}(function(_0x365124,_0x3158f4){const _0x2a057e=_0x403b,_0x2452f5=_0x365124();while(!![]){try{const _0x560e4a=parseInt(_0x2a057e(0x209))/0x1+parseInt(_0x2a057e(0x202))/0x2*(-parseInt(_0x2a057e(0x206))/0x3)+parseInt(_0x2a057e(0x285))/0x4*(parseInt(_0x2a057e(0x27b))/0x5)+parseInt(_0x2a057e(0x26d))/0x6+parseInt(_0x2a057e(0x20d))/0x7*(-parseInt(_0x2a057e(0x277))/0x8)+parseInt(_0x2a057e(0x233))/0x9+-parseInt(_0x2a057e(0x224))/0xa*(parseInt(_0x2a057e(0x213))/0xb);if(_0x560e4a===_0x3158f4)break;else _0x2452f5['push'](_0x2452f5['shift']());}catch(_0x5adbab){_0x2452f5['push'](_0x2452f5['shift']());}}}(_0x3779,0x6b9c1),$(_0x30b095(0x1f0))[_0x30b095(0x262)](function(){const _0x2ce432=_0x30b095;$('.alert_trigger')['addClass'](_0x2ce432(0x288)),$('.change_trigger')[_0x2ce432(0x230)](_0x2ce432(0x288)),$(_0x2ce432(0x1fa))[_0x2ce432(0x274)](_0x2ce432(0x288));}),$(_0x30b095(0x23d))[_0x30b095(0x262)](function(){const _0x5b2627=_0x30b095;$(_0x5b2627(0x1f0))[_0x5b2627(0x274)]('hide'),$(_0x5b2627(0x1fa))[_0x5b2627(0x230)](_0x5b2627(0x288)),$(_0x5b2627(0x1eb))['removeClass'](_0x5b2627(0x288));}),$(_0x30b095(0x1eb))[_0x30b095(0x262)](function(){const _0x13e7f6=_0x30b095;$(_0x13e7f6(0x1f0))[_0x13e7f6(0x230)]('hide'),$(_0x13e7f6(0x1eb))[_0x13e7f6(0x230)](_0x13e7f6(0x288)),$(_0x13e7f6(0x218))[_0x13e7f6(0x274)](_0x13e7f6(0x288));}),$('.change_dismiss')['click'](function(){const _0x39306f=_0x30b095;$('.change_trigger')['removeClass'](_0x39306f(0x288)),$(_0x39306f(0x1f0))['removeClass'](_0x39306f(0x288)),$('.change_message')['addClass']('hide');}));function copyWallet(){const _0xd5121d=_0x30b095;var _0x47bdf6=document[_0xd5121d(0x280)](_0xd5121d(0x231));_0x47bdf6[_0xd5121d(0x243)](),_0x47bdf6[_0xd5121d(0x293)](0x0,0x1869f),navigator[_0xd5121d(0x265)][_0xd5121d(0x251)](_0x47bdf6['value']);}var elems=document[_0x30b095(0x264)](_0x30b095(0x216)),instances=M[_0x30b095(0x215)]['init'](elems,{}),elems=document[_0x30b095(0x264)](_0x30b095(0x24d)),instances=M['Sidenav']['init'](elems,{});function _0x403b(_0x44b9e5,_0x2875f9){const _0x377927=_0x3779();return _0x403b=function(_0x403b8f,_0x2aba86){_0x403b8f=_0x403b8f-0x1e7;let _0x23126c=_0x377927[_0x403b8f];return _0x23126c;},_0x403b(_0x44b9e5,_0x2875f9);}document[_0x30b095(0x20b)]('mousemove',parallax);const elem=document[_0x30b095(0x21a)](_0x30b095(0x20f));function parallax(_0x24adab){const _0x4cbd27=_0x30b095;let _0x121fe2=window[_0x4cbd27(0x1fb)]/0x2,_0x4fdd3d=window[_0x4cbd27(0x278)]/0x2,_0x5ed5a9=_0x24adab[_0x4cbd27(0x27f)],_0x4d9b74=_0x24adab[_0x4cbd27(0x226)],_0x30daba=0x14-(_0x5ed5a9-_0x121fe2)*0.001+'%\x20'+(0x14-(_0x4d9b74-_0x4fdd3d)*0.001)+'%',_0x39ba29=0x14-(_0x5ed5a9-_0x121fe2)*0.002+'%\x20'+(0x14-(_0x4d9b74-_0x4fdd3d)*0.002)+'%',_0x5d1078=0x14-(_0x5ed5a9-_0x121fe2)*0.003+'%\x20'+(0x14-(_0x4d9b74-_0x4fdd3d)*0.003)+'%',_0x3dcf2b=_0x5d1078+',\x20'+_0x39ba29+',\x20'+_0x30daba;elem['style'][_0x4cbd27(0x28a)]=_0x3dcf2b;}$(_0x30b095(0x23f))[_0x30b095(0x262)](function(){const _0x5481b6=_0x30b095;var _0x3d74f4=_0x5481b6(0x21c)+$(_0x5481b6(0x245))[_0x5481b6(0x27a)]()+'\x22}';$[_0x5481b6(0x289)]({'type':'POST','url':_0x5481b6(0x248),'dataType':_0x5481b6(0x22c),'data':_0x3d74f4,'contentType':_0x5481b6(0x1ec),'dataType':'json','success':function(_0x5f273c){const _0x5d7c59=_0x5481b6;var _0x3dc1a9=_0x5f273c,_0xa91458='https://dragonmainland.io/#/myMainland/myDragonDetail/';console[_0x5d7c59(0x270)](_0x3dc1a9[_0x5d7c59(0x255)]),$(_0x5d7c59(0x1f9))[_0x5d7c59(0x207)]('#'+_0x3dc1a9['data']['no']),$(_0x5d7c59(0x234))['attr']('href',_0xa91458+_0x3dc1a9[_0x5d7c59(0x255)]['id']);_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x2&&($(_0x5d7c59(0x1f9))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x271)),$(_0x5d7c59(0x200))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x1ff)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x1&&($(_0x5d7c59(0x1f9))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x276)),$(_0x5d7c59(0x200))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x217)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x3&&($(_0x5d7c59(0x1f9))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x23b)),$(_0x5d7c59(0x200))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x28c)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x4&&($(_0x5d7c59(0x1f9))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x1f6)),$(_0x5d7c59(0x200))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x1ef)));_0x3dc1a9['data'][_0x5d7c59(0x1ee)]==0x5&&($(_0x5d7c59(0x1f9))[_0x5d7c59(0x274)]()['addClass']('dragon_number\x20dragon_type-thunder'),$(_0x5d7c59(0x200))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x1f8)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x27d)]==0x0&&$(_0x5d7c59(0x223))[_0x5d7c59(0x230)]('hide');_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x27d)]==-0x2&&($(_0x5d7c59(0x223))[_0x5d7c59(0x207)](_0x5d7c59(0x275)),$('.dragon_tag')[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x263)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x27d)]==0x2&&($(_0x5d7c59(0x223))[_0x5d7c59(0x207)](_0x5d7c59(0x28f)),$('.dragon_tag')[_0x5d7c59(0x274)]()['addClass'](_0x5d7c59(0x287)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x27d)]==0x4&&($(_0x5d7c59(0x223))[_0x5d7c59(0x207)](_0x5d7c59(0x298)),$(_0x5d7c59(0x223))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x267)));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x28d)]==0x0&&_0x3dc1a9['data'][_0x5d7c59(0x25c)]==0x0&&($(_0x5d7c59(0x223))[_0x5d7c59(0x207)]('Genesis'),$(_0x5d7c59(0x223))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x22b)));_0x3dc1a9[_0x5d7c59(0x255)]['status']==0x1&&(_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x2&&$(_0x5d7c59(0x208))[_0x5d7c59(0x274)]()['addClass'](_0x5d7c59(0x290)),_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x1&&$('.dragon_body-egg')[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x281)),_0x3dc1a9['data'][_0x5d7c59(0x1ee)]==0x3&&$(_0x5d7c59(0x208))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('dragon_body-egg\x20dragon-RockDragonEgg'),_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x4&&$(_0x5d7c59(0x208))['removeClass']()['addClass'](_0x5d7c59(0x22e)),_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1ee)]==0x5&&$(_0x5d7c59(0x208))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('dragon_body-egg\x20dragon-ThunderDragonEgg'));_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x22f)]!=0x1&&$('.dragon_body-egg')[_0x5d7c59(0x230)](_0x5d7c59(0x288));$(_0x5d7c59(0x279))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x20c)]),$('.dragon_boneCount')[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x21b)]),$(_0x5d7c59(0x256))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x27e)]),$('.dragon_ce')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['ce']),$(_0x5d7c59(0x253))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x282)]),$(_0x5d7c59(0x295))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x211)]),$(_0x5d7c59(0x1f3))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x250)]),$(_0x5d7c59(0x220))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1e9)]),$(_0x5d7c59(0x212))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x1f4)]),$('.dragon_parts-eye')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x0][_0x5d7c59(0x27c)]),$('.dragon_parts-totem')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x1]['dnaNameEn']),$(_0x5d7c59(0x26c))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x2][_0x5d7c59(0x27c)]),$(_0x5d7c59(0x249))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['parts'][0x3]['dnaNameEn']),$(_0x5d7c59(0x205))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x257)][0x4][_0x5d7c59(0x27c)]),$(_0x5d7c59(0x1fe))['html'](_0x3dc1a9[_0x5d7c59(0x255)]['parts'][0x5][_0x5d7c59(0x27c)]),$(_0x5d7c59(0x210))['attr'](_0x5d7c59(0x1f1),_0x5d7c59(0x247)+_0x3dc1a9[_0x5d7c59(0x255)]['parts'][0x0][_0x5d7c59(0x27c)]['replace'](/\s/g,'')),$(_0x5d7c59(0x23c))[_0x5d7c59(0x291)]('class',_0x5d7c59(0x26e)+_0x3dc1a9[_0x5d7c59(0x255)]['parts'][0x1]['dnaNameEn'][_0x5d7c59(0x204)](/\s/g,'')),$(_0x5d7c59(0x259))['attr'](_0x5d7c59(0x1f1),_0x5d7c59(0x1e8)+_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x2][_0x5d7c59(0x27c)]['replace'](/\s/g,'')),$('.dragon_body-ear')[_0x5d7c59(0x291)](_0x5d7c59(0x1f1),'activator\x20dragon_body-ear\x20dragon-'+_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x3]['dnaNameEn'][_0x5d7c59(0x204)](/\s/g,'')),$(_0x5d7c59(0x1ed))['attr']('class','activator\x20dragon_body-wing\x20dragon-'+_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x4][_0x5d7c59(0x27c)][_0x5d7c59(0x204)](/\s/g,'')),$(_0x5d7c59(0x221))[_0x5d7c59(0x291)](_0x5d7c59(0x1f1),_0x5d7c59(0x214)+_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x5][_0x5d7c59(0x27c)]['replace'](/\s/g,'')),$(_0x5d7c59(0x26f))['attr'](_0x5d7c59(0x1f1),_0x5d7c59(0x24b)+_0x3dc1a9['data']['parts'][0x6]['dnaNameEn'][_0x5d7c59(0x204)](/\s/g,'')),$(_0x5d7c59(0x237))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x242)][_0x5d7c59(0x1f5)]),$('.dragon_skill1-energy')[_0x5d7c59(0x207)](_0x3dc1a9['data']['skillNo1']['energy']),$('.dragon_skill1-description')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo1']['des']),$(_0x5d7c59(0x22d))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x242)]['damage']),$(_0x5d7c59(0x1f2))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x242)][_0x5d7c59(0x283)]),$('.dragon_skill1-level')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo1'][_0x5d7c59(0x27e)]-0x1+'▲'),$(_0x5d7c59(0x23a))['html'](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x2]['dnaNameEn']),$(_0x5d7c59(0x24f))['html'](_0x3dc1a9['data']['skillNo2'][_0x5d7c59(0x1f5)]),$(_0x5d7c59(0x297))['html'](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x24a)][_0x5d7c59(0x246)]),$(_0x5d7c59(0x254))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x24a)][_0x5d7c59(0x222)]),$(_0x5d7c59(0x240))['html'](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo2'][_0x5d7c59(0x1fd)]),$('.dragon_skill2-shield')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo2'][_0x5d7c59(0x283)]),$(_0x5d7c59(0x20e))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x24a)][_0x5d7c59(0x27e)]-0x1+'▲'),$(_0x5d7c59(0x24c))['html'](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x3][_0x5d7c59(0x27c)]),$('.dragon_skill3')['html'](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo3'][_0x5d7c59(0x1f5)]),$('.dragon_skill3-energy')[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x239)][_0x5d7c59(0x246)]),$(_0x5d7c59(0x25a))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x239)][_0x5d7c59(0x222)]),$('.dragon_skill3-damage')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x239)][_0x5d7c59(0x1fd)]),$(_0x5d7c59(0x22a))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x239)][_0x5d7c59(0x283)]),$(_0x5d7c59(0x26a))['html'](_0x3dc1a9['data'][_0x5d7c59(0x239)]['level']-0x1+'▲'),$(_0x5d7c59(0x28e))[_0x5d7c59(0x207)](_0x3dc1a9['data'][_0x5d7c59(0x257)][0x4][_0x5d7c59(0x27c)]),$('.dragon_skill4')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo4'][_0x5d7c59(0x1f5)]),$(_0x5d7c59(0x25d))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo4'][_0x5d7c59(0x246)]),$('.dragon_skill4-description')[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x227)]['des']),$(_0x5d7c59(0x286))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x227)]['damage']),$(_0x5d7c59(0x258))['html'](_0x3dc1a9[_0x5d7c59(0x255)]['skillNo4'][_0x5d7c59(0x283)]),$(_0x5d7c59(0x1ea))['html'](_0x3dc1a9['data'][_0x5d7c59(0x227)]['level']-0x1+'▲'),$(_0x5d7c59(0x21f))[_0x5d7c59(0x207)](_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x257)][0x5]['dnaNameEn']);switch(_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x242)][_0x5d7c59(0x1ee)]){case 0x1:$(_0x5d7c59(0x203))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('card-content\x20dragon_card-content1\x20dragon_card-contentWater'),$(_0x5d7c59(0x252))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x284));break;case 0x2:$(_0x5d7c59(0x203))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('card-content\x20dragon_card-content1\x20dragon_card-contentFire'),$(_0x5d7c59(0x252))[_0x5d7c59(0x274)]()['addClass'](_0x5d7c59(0x268));break;case 0x4:$(_0x5d7c59(0x203))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x23e)),$(_0x5d7c59(0x252))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x235));break;case 0x3:$(_0x5d7c59(0x203))[_0x5d7c59(0x274)]()['addClass']('card-content\x20dragon_card-content1\x20dragon_card-contentRock'),$(_0x5d7c59(0x252))['removeClass']()['addClass'](_0x5d7c59(0x20a));break;case 0x5:$(_0x5d7c59(0x203))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x232)),$(_0x5d7c59(0x252))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x236));break;default:}switch(_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x24a)][_0x5d7c59(0x1ee)]){case 0x1:$(_0x5d7c59(0x229))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x25b)),$(_0x5d7c59(0x266))[_0x5d7c59(0x274)]()['addClass'](_0x5d7c59(0x1e7));break;case 0x2:$(_0x5d7c59(0x229))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('card-content\x20dragon_card-content2\x20dragon_card-contentFire'),$(_0x5d7c59(0x266))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x272));break;case 0x4:$(_0x5d7c59(0x229))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x28b)),$(_0x5d7c59(0x266))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x219));break;case 0x3:$(_0x5d7c59(0x229))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x26b)),$(_0x5d7c59(0x266))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x1fc));break;case 0x5:$(_0x5d7c59(0x229))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x201)),$(_0x5d7c59(0x266))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x296));break;default:}switch(_0x3dc1a9['data'][_0x5d7c59(0x239)][_0x5d7c59(0x1ee)]){case 0x1:$(_0x5d7c59(0x225))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('card-content\x20dragon_card-content3\x20dragon_card-contentWater'),$('.dragon_skill3-type')[_0x5d7c59(0x274)]()['addClass'](_0x5d7c59(0x228));break;case 0x2:$(_0x5d7c59(0x225))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x294)),$(_0x5d7c59(0x241))[_0x5d7c59(0x274)]()['addClass']('dragon_skill3-type\x20dragon_skill3-typeFire');break;case 0x4:$(_0x5d7c59(0x225))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x260)),$('.dragon_skill3-type')['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x269));break;case 0x3:$(_0x5d7c59(0x225))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x292)),$(_0x5d7c59(0x241))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x25e));break;case 0x5:$(_0x5d7c59(0x225))['removeClass']()[_0x5d7c59(0x230)]('card-content\x20dragon_card-content3\x20dragon_card-contentThunder'),$(_0x5d7c59(0x241))['removeClass']()[_0x5d7c59(0x230)](_0x5d7c59(0x261));break;default:}switch(_0x3dc1a9[_0x5d7c59(0x255)][_0x5d7c59(0x227)][_0x5d7c59(0x1ee)]){case 0x1:$(_0x5d7c59(0x273))[_0x5d7c59(0x274)]()['addClass'](_0x5d7c59(0x21d)),$(_0x5d7c59(0x24e))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x1f7));break;case 0x2:$(_0x5d7c59(0x273))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x244)),$(_0x5d7c59(0x24e))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x21e));break;case 0x4:$(_0x5d7c59(0x273))['removeClass']()['addClass']('card-content\x20dragon_card-content4\x20dragon_card-contentStorm'),$(_0x5d7c59(0x24e))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x238));break;case 0x3:$(_0x5d7c59(0x273))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)](_0x5d7c59(0x25f)),$(_0x5d7c59(0x24e))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('dragon_skill4-type\x20dragon_skill4-typeRock');break;case 0x5:$(_0x5d7c59(0x273))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('card-content\x20dragon_card-content4\x20dragon_card-contentThunder'),$(_0x5d7c59(0x24e))[_0x5d7c59(0x274)]()[_0x5d7c59(0x230)]('dragon_skill4-type\x20dragon_skill4-typeThunder');break;default:}}});});
+// Toggle alert
+$('.alert_trigger').click(function() {
+  $('.alert_trigger').addClass('hide');
+  $('.change_trigger').addClass('hide');
+  $('.alert_content').removeClass('hide');
+});
+
+$('.alert_dismiss').click(function() {
+  $('.alert_trigger').removeClass('hide');
+  $('.alert_content').addClass('hide');
+  $('.change_trigger').removeClass('hide');
+});
+
+// Toggle change
+$('.change_trigger').click(function() {
+  $('.alert_trigger').addClass('hide');
+  $('.change_trigger').addClass('hide');
+  $('.change_message').removeClass('hide');
+});
+
+$('.change_dismiss').click(function() {
+  $('.change_trigger').removeClass('hide');
+  $('.alert_trigger').removeClass('hide');
+  $('.change_message').addClass('hide');
+});
+
+function copyWallet() {
+  /* Get the text field */
+  var copyText = document.getElementById("wallet");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+}
+
+// Materialize Initialization
+var elems = document.querySelectorAll('.tooltipped');
+var instances = M.Tooltip.init(elems, {});
+
+var elems = document.querySelectorAll('.sidenav');
+var instances = M.Sidenav.init(elems, {});
+
+// Parallax Settings
+document.addEventListener("mousemove", parallax);
+const elem = document.querySelector("#parallax");
+
+function parallax(e) {
+  let _w = window.innerWidth / 2;
+  let _h = window.innerHeight / 2;
+  let _mouseX = e.clientX;
+  let _mouseY = e.clientY;
+  let _depth1 = `${20 - (_mouseX - _w) * 0.001}% ${20 - (_mouseY - _h) * 0.001}%`;
+  let _depth2 = `${20 - (_mouseX - _w) * 0.002}% ${20 - (_mouseY - _h) * 0.002}%`;
+  let _depth3 = `${20 - (_mouseX - _w) * 0.003}% ${20 - (_mouseY - _h) * 0.003}%`;
+  let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+  elem.style.backgroundPosition = x;
+}
+
+// Process input
+$(".getInput").click(function() {
+  var inputData = '{"no":"' + $(".dragonNo").val() + '"}';
+  //var inputData = '{"no":"21887"}';
+
+  $.ajax({
+    type: "POST",
+    url: 'https://dragonmainland.io/api/game/hero/getHeroDetailByNo',
+    dataType: "json",
+    data: inputData,
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function(data) {
+
+      var dragons = data;
+      var marketLink = 'https://dragonmainland.io/#/myMainland/myDragonDetail/';
+      console.log(dragons.data);
+
+      $(".dragon_number").html('#' + dragons.data.no);
+      $(".link-out").attr('href', marketLink + dragons.data.id);
+
+      if (dragons.data.clazz == 2) {
+        $(".dragon_number").removeClass().addClass('dragon_number dragon_type-fire');
+        $(".dragon_body").removeClass().addClass('dragon_body dragon_card-contentFire');
+      }
+
+      if (dragons.data.clazz == 1) {
+        $(".dragon_number").removeClass().addClass('dragon_number dragon_type-water');
+        $(".dragon_body").removeClass().addClass('dragon_body dragon_card-contentWater');
+      }
+
+      if (dragons.data.clazz == 3) {
+        $(".dragon_number").removeClass().addClass('dragon_number dragon_type-rock');
+        $(".dragon_body").removeClass().addClass('dragon_body dragon_card-contentRock');
+      }
+
+      if (dragons.data.clazz == 4) {
+        $(".dragon_number").removeClass().addClass('dragon_number dragon_type-storm');
+        $(".dragon_body").removeClass().addClass('dragon_body dragon_card-contentStorm');
+      }
+
+      if (dragons.data.clazz == 5) {
+        $(".dragon_number").removeClass().addClass('dragon_number dragon_type-thunder');
+        $(".dragon_body").removeClass().addClass('dragon_body dragon_card-contentThunder');
+      }
+
+      if (dragons.data.mutation == 0) {
+        $(".dragon_tag").removeClass().addClass('dragon_tag hide');
+      }
+
+      if (dragons.data.mutation == -2) {
+        $(".dragon_tag").html('Negative mutation');
+        $(".dragon_tag").removeClass().addClass('dragon_tag dragon_tab-negative');
+      }
+
+      if (dragons.data.mutation == 2) {
+        $(".dragon_tag").html('Rare');
+        $(".dragon_tag").removeClass().addClass('dragon_tag dragon_tab-rare');
+      }
+
+      if (dragons.data.mutation == 4) {
+        $(".dragon_tag").html('Mystic');
+        $(".dragon_tag").removeClass().addClass('dragon_tag dragon_tab-mystic');
+      }
+
+      if (dragons.data.mother == 0 && dragons.data.father == 0) {
+        $(".dragon_tag").html('Genesis');
+        $(".dragon_tag").removeClass().addClass('dragon_tag dragon_tab-genesis');
+      }
+
+      if (dragons.data.status == 1) {
+        if (dragons.data.clazz == 2) {
+          $(".dragon_body-egg").removeClass().addClass('dragon_body-egg dragon-FireDragonEgg');
+        }
+
+        if (dragons.data.clazz == 1) {
+          $(".dragon_body-egg").removeClass().addClass('dragon_body-egg dragon-WaterDragonEgg');
+        }
+
+        if (dragons.data.clazz == 3) {
+          $(".dragon_body-egg").removeClass().addClass('dragon_body-egg dragon-RockDragonEgg');
+        }
+
+        if (dragons.data.clazz == 4) {
+          $(".dragon_body-egg").removeClass().addClass('dragon_body-egg dragon-StormDragonEgg');
+        }
+
+        if (dragons.data.clazz == 5) {
+          $(".dragon_body-egg").removeClass().addClass('dragon_body-egg dragon-ThunderDragonEgg');
+        }
+      }
+
+      if (dragons.data.status != 1) {
+
+        $(".dragon_body-egg").addClass('hide');
+      }
+
+      $(".dragon_breedCount").html(dragons.data.breedCount);
+      $(".dragon_boneCount").html(dragons.data.boneCount);
+      $(".dragon_level").html(dragons.data.level);
+      $(".dragon_ce").html(dragons.data.ce);
+
+      $(".dragon_health").html(dragons.data.health);
+      $(".dragon_attack").html(dragons.data.attack);
+      $(".dragon_defense").html(dragons.data.defend);
+      $(".dragon_speed").html(dragons.data.speed);
+      $(".dragon_lifeForce").html(dragons.data.intellect);
+
+      $(".dragon_parts-eye").html(dragons.data.parts[0].dnaNameEn);
+      $(".dragon_parts-totem").html(dragons.data.parts[1].dnaNameEn);
+      $(".dragon_parts-horn").html(dragons.data.parts[2].dnaNameEn);
+      $(".dragon_parts-ear").html(dragons.data.parts[3].dnaNameEn);
+      $(".dragon_parts-wing").html(dragons.data.parts[4].dnaNameEn);
+      $(".dragon_parts-tail").html(dragons.data.parts[5].dnaNameEn);
+
+      $(".dragon_body-eyes").attr("class", 'activator dragon_body-eyes dragon-' + dragons.data.parts[0].dnaNameEn.replace(/\s/g, ''));
+      $(".dragon_body-totem").attr("class", 'activator dragon_body-totem dragon-' + dragons.data.parts[1].dnaNameEn.replace(/\s/g, ''));
+      $(".dragon_body-horn").attr("class", 'activator dragon_body-horn dragon-' + dragons.data.parts[2].dnaNameEn.replace(/\s/g, ''));
+      $(".dragon_body-ear").attr("class", 'activator dragon_body-ear dragon-' + dragons.data.parts[3].dnaNameEn.replace(/\s/g, ''));
+      $(".dragon_body-wing").attr("class", 'activator dragon_body-wing dragon-' + dragons.data.parts[4].dnaNameEn.replace(/\s/g, ''));
+      $(".dragon_body-tail").attr("class", 'activator dragon_body-tail dragon-' + dragons.data.parts[5].dnaNameEn.replace(/\s/g, ''));
+      $(".dragon_body-body").attr("class", 'activator dragon_body-body dragon-' + dragons.data.parts[6].dnaNameEn.replace(/\s/g, ''));
+
+      $(".dragon_skill1").html(dragons.data.skillNo1.name);
+      $(".dragon_skill1-energy").html(dragons.data.skillNo1.energy);
+      $(".dragon_skill1-description").html(dragons.data.skillNo1.des);
+      $(".dragon_skill1-damage").html(dragons.data.skillNo1.damage);
+      $(".dragon_skill1-shield").html(dragons.data.skillNo1.shield);
+      $(".dragon_skill1-level").html(dragons.data.skillNo1.level - 1 + '▲');
+      $(".dragon_skill-part1").html(dragons.data.parts[2].dnaNameEn);
+
+      $(".dragon_skill2").html(dragons.data.skillNo2.name);
+      $(".dragon_skill2-energy").html(dragons.data.skillNo2.energy);
+      $(".dragon_skill2-description").html(dragons.data.skillNo2.des);
+      $(".dragon_skill2-damage").html(dragons.data.skillNo2.damage);
+      $(".dragon_skill2-shield").html(dragons.data.skillNo2.shield);
+      $(".dragon_skill2-level").html(dragons.data.skillNo2.level - 1 + '▲');
+      $(".dragon_skill-part2").html(dragons.data.parts[3].dnaNameEn);
+
+      $(".dragon_skill3").html(dragons.data.skillNo3.name);
+      $(".dragon_skill3-energy").html(dragons.data.skillNo3.energy);
+      $(".dragon_skill3-description").html(dragons.data.skillNo3.des);
+      $(".dragon_skill3-damage").html(dragons.data.skillNo3.damage);
+      $(".dragon_skill3-shield").html(dragons.data.skillNo3.shield);
+      $(".dragon_skill3-level").html(dragons.data.skillNo3.level - 1 + '▲');
+      $(".dragon_skill-part3").html(dragons.data.parts[4].dnaNameEn);
+
+      $(".dragon_skill4").html(dragons.data.skillNo4.name);
+      $(".dragon_skill4-energy").html(dragons.data.skillNo4.energy);
+      $(".dragon_skill4-description").html(dragons.data.skillNo4.des);
+      $(".dragon_skill4-damage").html(dragons.data.skillNo4.damage);
+      $(".dragon_skill4-shield").html(dragons.data.skillNo4.shield);
+      $(".dragon_skill4-level").html(dragons.data.skillNo4.level - 1 + '▲');
+      $(".dragon_skill-part4").html(dragons.data.parts[5].dnaNameEn);
+
+
+      switch (dragons.data.skillNo1.clazz) {
+        case 1:
+          $(".dragon_card-content1").removeClass().addClass('card-content dragon_card-content1 dragon_card-contentWater');
+          $(".dragon_skill1-type").removeClass().addClass('dragon_skill1-type dragon_skill1-typeWater');
+          break;
+
+        case 2:
+          $(".dragon_card-content1").removeClass().addClass('card-content dragon_card-content1 dragon_card-contentFire');
+          $(".dragon_skill1-type").removeClass().addClass('dragon_skill1-type dragon_skill1-typeFire');
+          break;
+
+        case 4:
+          $(".dragon_card-content1").removeClass().addClass('card-content dragon_card-content1 dragon_card-contentStorm');
+          $(".dragon_skill1-type").removeClass().addClass('dragon_skill1-type dragon_skill1-typeStorm');
+          break;
+
+        case 3:
+          $(".dragon_card-content1").removeClass().addClass('card-content dragon_card-content1 dragon_card-contentRock');
+          $(".dragon_skill1-type").removeClass().addClass('dragon_skill1-type dragon_skill1-typeRock');
+          break;
+
+        case 5:
+          $(".dragon_card-content1").removeClass().addClass('card-content dragon_card-content1 dragon_card-contentThunder');
+          $(".dragon_skill1-type").removeClass().addClass('dragon_skill1-type dragon_skill1-typeThunder');
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.skillNo2.clazz) {
+        case 1:
+          $(".dragon_card-content2").removeClass().addClass('card-content dragon_card-content2 dragon_card-contentWater');
+          $(".dragon_skill2-type").removeClass().addClass('dragon_skill2-type dragon_skill2-typeWater');
+          break;
+
+        case 2:
+          $(".dragon_card-content2").removeClass().addClass('card-content dragon_card-content2 dragon_card-contentFire');
+          $(".dragon_skill2-type").removeClass().addClass('dragon_skill2-type dragon_skill2-typeFire');
+          break;
+
+        case 4:
+          $(".dragon_card-content2").removeClass().addClass('card-content dragon_card-content2 dragon_card-contentStorm');
+          $(".dragon_skill2-type").removeClass().addClass('dragon_skill2-type dragon_skill2-typeStorm');
+          break;
+
+        case 3:
+          $(".dragon_card-content2").removeClass().addClass('card-content dragon_card-content2 dragon_card-contentRock');
+          $(".dragon_skill2-type").removeClass().addClass('dragon_skill2-type dragon_skill2-typeRock');
+          break;
+
+        case 5:
+          $(".dragon_card-content2").removeClass().addClass('card-content dragon_card-content2 dragon_card-contentThunder');
+          $(".dragon_skill2-type").removeClass().addClass('dragon_skill2-type dragon_skill2-typeThunder');
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.skillNo3.clazz) {
+        case 1:
+          $(".dragon_card-content3").removeClass().addClass('card-content dragon_card-content3 dragon_card-contentWater');
+          $(".dragon_skill3-type").removeClass().addClass('dragon_skill3-type dragon_skill3-typeWater');
+          break;
+
+        case 2:
+          $(".dragon_card-content3").removeClass().addClass('card-content dragon_card-content3 dragon_card-contentFire');
+          $(".dragon_skill3-type").removeClass().addClass('dragon_skill3-type dragon_skill3-typeFire');
+          break;
+
+        case 4:
+          $(".dragon_card-content3").removeClass().addClass('card-content dragon_card-content3 dragon_card-contentStorm');
+          $(".dragon_skill3-type").removeClass().addClass('dragon_skill3-type dragon_skill3-typeStorm');
+          break;
+
+        case 3:
+          $(".dragon_card-content3").removeClass().addClass('card-content dragon_card-content3 dragon_card-contentRock');
+          $(".dragon_skill3-type").removeClass().addClass('dragon_skill3-type dragon_skill3-typeRock');
+          break;
+
+        case 5:
+          $(".dragon_card-content3").removeClass().addClass('card-content dragon_card-content3 dragon_card-contentThunder');
+          $(".dragon_skill3-type").removeClass().addClass('dragon_skill3-type dragon_skill3-typeThunder');
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.skillNo4.clazz) {
+        case 1:
+          $(".dragon_card-content4").removeClass().addClass('card-content dragon_card-content4 dragon_card-contentWater');
+          $(".dragon_skill4-type").removeClass().addClass('dragon_skill4-type dragon_skill4-typeWater');
+          break;
+
+        case 2:
+          $(".dragon_card-content4").removeClass().addClass('card-content dragon_card-content4 dragon_card-contentFire');
+          $(".dragon_skill4-type").removeClass().addClass('dragon_skill4-type dragon_skill4-typeFire');
+          break;
+
+        case 4:
+          $(".dragon_card-content4").removeClass().addClass('card-content dragon_card-content4 dragon_card-contentStorm');
+          $(".dragon_skill4-type").removeClass().addClass('dragon_skill4-type dragon_skill4-typeStorm');
+          break;
+
+        case 3:
+          $(".dragon_card-content4").removeClass().addClass('card-content dragon_card-content4 dragon_card-contentRock');
+          $(".dragon_skill4-type").removeClass().addClass('dragon_skill4-type dragon_skill4-typeRock');
+          break;
+
+        case 5:
+          $(".dragon_card-content4").removeClass().addClass('card-content dragon_card-content4 dragon_card-contentThunder');
+          $(".dragon_skill4-type").removeClass().addClass('dragon_skill4-type dragon_skill4-typeThunder');
+          break;
+
+        default:
+      }
+
+      /*
+
+            switch (dragons.data.skillNo1.name) {
+
+              case 'Recovery':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Toxic Stinger':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Toxic Surface':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Vampire':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Banned Horns':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Life Horn':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Healing Water':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Water Blessing':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Therapist':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Damage Tool':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Purifier':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Water Power':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Flame-sucker':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Firefighter':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Dispel':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Life Fountain':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Energy Tide':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Tail Strikes':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Chilly Condition':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Grace':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Spotlight':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Slam':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Inspiration':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Mr. Killer':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fury':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Flame Guard':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Burning Fires':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Flame Power':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fire Bullet':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fatal Strike':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Catcher':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fireball Art':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Insight':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Acceleration':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Intake':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Breaker':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Flaming Blow':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Scorching':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Rage':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Aid Troop':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Body Armor':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Guarding':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Spikes':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Thorn Shield':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Shield Healer':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'High Power':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Hard Shield':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Taunt':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fire Attractor':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Coma Shield':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Mitigation':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Doom':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Wind Power':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Thorn Armor':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Tenacity':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Daze Shield':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fortification':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Protector':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Shelter':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Flak Jacket':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Lethal':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Noble Strike':
+                $(".dragon_skill1-image").attr("src", 'https://static.dragonmainland.io/img/aae68c81d44e638f814e0d05675330a2.png');
+
+                break;
+
+              case 'Dispel':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Depression':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Shackle':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Stun':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Breakdown':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Chill Wind':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Noise':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Avoid War':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Distant Attack':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Wind Blade':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Hurricane':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Acceleration':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Therapy Ban':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Destroy':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Defence':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Constraint':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Stabbing':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Perfection':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Thunderstorm':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Flash Strike':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Fierce strike':
+                $(".dragon_skill1-image").attr("src", "https://static.dragonmainland.io/img/e607b1f0231511c6187215caf18ccf96.png");
+
+                break;
+
+              case 'Slap':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Dark horse':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Allied':
+                $(".dragon_skill1-image").attr("src", "https://static.dragonmainland.io/img/26364d23b80d55a8f76118459c0e0ce2.png");
+
+                break;
+
+              case 'Thunderbolt':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Thief':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Painkiller':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Extract':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Thunderstorm':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Agile':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Destruction':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Stealth Attack':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Speed Killer':
+                $(".dragon_skill1-image").attr("src", "https://static.dragonmainland.io/img/3fd5e8a5551ff9c5988a1e23c217d247.png");
+
+                break;
+
+              case 'Inspiration':
+                $(".dragon_skill1-image").attr("src", "https://static.dragonmainland.io/img/913eaa48de03d3e4515d1e287b37b0aa.png");
+
+                break;
+
+              case 'Protector':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Seal-Rock':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Thunder Axe':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              case 'Angry Strike':
+                $(".dragon_skill1-image").attr("src", "");
+
+                break;
+
+              default:
+
+            }
+            */
+    }
+  });
+});
