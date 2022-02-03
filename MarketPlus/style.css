@@ -3,6 +3,27 @@
   font-size: 12px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #795548;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d4c41;
+}
+
 .alert_dismiss,
 .change_dismiss {
   float: right;
@@ -197,6 +218,7 @@
   width: calc(100% - 10px);
   transition: .3s;
   border: 5px solid white;
+  height: 264px;
 }
 
 #products {
@@ -387,6 +409,7 @@
 
 .dragon_egg {
   margin: 18px 0;
+  height: 154px;
 }
 
 .modal_overlay {

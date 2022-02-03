@@ -310,7 +310,7 @@
   //   1. Highest Price
   // 2. Latest
 
-  var query = '{"clazz":[' + race + '],"limit":100,"page":1,"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[],"attackArr":[40,88],"defenseArr":[40,88],"healthArr":[40,88],"speedArr":[40,88],"intelligenceArr":[40,88],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
+  var query = '{"clazz":[' + race + '],"limit":60,"page":1,"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[],"attackArr":[40,88],"defenseArr":[40,88],"healthArr":[40,88],"speedArr":[40,88],"intelligenceArr":[40,88],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
   $.ajax({
     type: "POST",
     url: 'https://dragonmainland.io/api/market/product/page',
