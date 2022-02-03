@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Market +</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/DM-logo.png">
+
+  <link href="style.css" rel="stylesheet">
+  <link href="parts.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="parallax"></div>
+  <div class="bg_overlay"></div>
+
+  <div class="alert_trigger">
+    <a class="btn-floating pulse black"><i class="fa fa-gear fa-spin"></i></a>
+  </div>
+
+  <div class="alert_message">
+    <div class="alert_content hide">
+      <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
+      <i class="fa fa-close alert_dismiss"></i>
+      <p class="small-text">
+        TO DO: <br>
+        1. Allow multiple pages to be displayed<br>
+        2. Responsiveness issue <br />
+        3. Fix slider not changing when manually updating values <br />
+        4. Add Stat filter <br />
+        5. Display Dragon Details when clicking an item <br />
+      </p>
+      <p class="small-text">Want to help the project? Join my discord <b><i><a href="https://discord.gg/MkKbAYFg9F">here</a></i></b></p>
+
+      <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
+      <p class="small-text">
+        <i>If you are enjoying this project, you can consider donating through my wallet address. </i><br />
+        <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c</button>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="change_trigger">
+    <a class="btn-floating pulse black"><i class="fa fa-list"></i></a>
+  </div>
+
+  <div class="change_message hide">
+    <p><b>Changelogs:</b></p>
+    <i class="fa fa-close change_dismiss"></i>
+    <p class="small-text">
+      <b>02/03/22.</b> Released v0.0.1. Release first initial version of Market +. <br />
+    </p>
+  </div>
+
+  <main class='body row'>
+    <div class="side_bar">
+      <img src="assets/DM-logo.png" alt="DM logo" />
+      <div class="filters">
+        <a class="waves-effect waves-light btn apply_Filter">APPLY FILTER</a>
+
+        <div class="categ_general">
+          <p class="categ_label">Race</p>
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_fire" />
+            <span>Fire</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_water" />
+            <span>Water</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_storm" />
+            <span>Storm</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_rock" />
+            <span>Rock</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_thunder" />
+            <span>Thunder</span>
+          </label>
+        </div>
+
+        <div class="categ_stag">
+          <p class="categ_label">Form</p>
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_egg" />
+            <span>Egg</span>
+          </label>
+
+          <label>
+            <input type="checkbox" class="reset-checkbox" id="filter_adult" />
+            <span>Adult</span>
+          </label>
+        </div>
+
+        <div class="categ_breedCount">
+          <p class="categ_label">Breed Count</p>
+
+          <input type="text" id="slider_bc-min" class="browser-default left" />
+          <input type="text" id="slider_bc-max" class="browser-default right" />
+          <div class="categ_bc-container">
+            <div id="filter_breedCount"></div>
+          </div>
+
+        </div>
+
+        <div class="categ_CE">
+          <p class="categ_label">CE</p>
+
+          <input type="text" id="slider_CE-min" class="browser-default left" />
+          <input type="text" id="slider_CE-max" class="browser-default right" />
+          <div class="categ_CE-container">
+            <div id="filter_CE"></div>
+          </div>
+        </div>
+
+        <div class="creator">
+          <a class="btn-floating pulse white"><img class="" src="https://cdn.discordapp.com/avatars/366452806246465537/465a93828fe0c618317c03bbe774512f.webp?size=100" alt=""></a>
+          <div>GibiDroidZ#3281</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_content">
+      <h1>Market +</h1>
+
+      <div class="filter_sort">
+        <p class="totalDragons"></p>
+
+        <div class="pages">
+          <ul class="pagination">
+            <!--
+            <li class="disabled"><a href="#!"><i class="fa fa-chevron-left"></i></a></li>
+            <div class="pageListWrap"></div>
+            <li class="waves-effect"><a href="#!"><i class="fa fa-chevron-right"></i></a></li>
+          -->
+          </ul>
+        </div>
+
+        <select class="browser" name="">
+          <option value="1">Latest</option>
+          <option value="2">Lowest Price</option>
+          <option value="3">Highest Price</option>
+          <option value="4">Lowest ID</option>
+          <option value="5">Highest ID</option>
+        </select>
+      </div>
+
+      <div id="products" class="row">
+        <!-- Modal Structure -->
+        <div class="modal_overlay valign-wrapper hide">
+          <div class="modal-content">
+            <h4>Dragon detail</h4>
+
+            <div class="dragon_showCase col l6 ">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <div class="dragon_body">
+
+                    <div class="dragon_body-tail"></div>
+                    <div class="dragon_body-horn"></div>
+                    <div class="dragon_body-ear"></div>
+                    <div class="dragon_body-body"></div>
+                    <div class="dragon_body-wing"></div>
+                    <div class="dragon_body-totem"></div>
+                    <div class="dragon_body-eyes"></div>
+                    <div class="dragon_body-egg"></div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-title activator grey-text text-darken-4">
+                    <span class="dragon_number"></span>
+                    <span class="dragon_tag hide"></span>
+                    <a href="#" target="_blank" class="link-out"><i class="fas fa-external-link-alt"></i></a>
+                    <i class="fas fa-bars right"></i>
+                  </div>
+
+                  <div class="detail-icon tooltipped" data-position="top" data-tooltip="Health"><i class="fas fa-heart"></i> <span class="dragon_health"></span></div>
+                  <div class="detail-icon tooltipped" data-position="top" data-tooltip="Attack"><i class="fas fa-sword"></i> <span class="dragon_attack"></span></div>
+                  <div class="detail-icon tooltipped" data-position="top" data-tooltip="Defense"><i class="fas fa-shield"></i> <span class="dragon_defense"></span></div>
+                  <div class="detail-icon tooltipped" data-position="top" data-tooltip="Speed"><i class="fas fa-boot"></i> <span class="dragon_speed"></span></div>
+                  <div class="detail-icon tooltipped" data-position="top" data-tooltip="Life Force"><i class="fas fa-fire"></i> <span class="dragon_lifeForce"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="CE"><i class="fas fa-dumbbell"></i> <span class="dragon_ce"></span></div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">
+                    <span class="dragon_number"></span>
+                    <span class="dragon_tag"></span>
+                    <i class="fas fa-close right"></i>
+                  </span>
+                  <p class="detail_section">Details</p>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Breed Count"><i class="fas fa-egg"></i> <span class="dragon_breedCount"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Skull Upgrades"><i class="fas fa-utensils"></i> <span class="dragon_boneCount"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Level"><i class="fas fa-level-up-alt"></i> <span class="dragon_level"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="CE"><i class="fas fa-dumbbell"></i> <span class="dragon_ce"></span></div>
+
+                  <p class="detail_section detail_section-inline">Stats</p>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Health"><i class="fas fa-heart"></i> <span class="dragon_health"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Attack"><i class="fas fa-sword"></i> <span class="dragon_attack"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Defense"><i class="fas fa-shield"></i> <span class="dragon_defense"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Speed"><i class="fas fa-boot"></i> <span class="dragon_speed"></span></div>
+                  <div class="detail_icon-inline detail-icon tooltipped" data-position="top" data-tooltip="Life Force"><i class="fas fa-fire"></i> <span class="dragon_lifeForce"></span></div>
+
+                  <p class="detail_section">Parts</p>
+                  <div class="row">
+                    <div class="col l6 detail-icon"><i class="dragon_part-pill tooltipped" data-position="top" data-tooltip="Eye">Eye</i> <span class="dragon_parts-eye"></span></div>
+                    <div class="col l6 detail-icon"><i class="dragon_part-pill tooltipped" data-position="top" data-tooltip="Totem">Totem</i> <span class="dragon_parts-totem"></span></div>
+                    <div class="col l6 detail-icon"><i class="dragon_part-pill tooltipped" data-position="top" data-tooltip="Horn">Horn</i> <span class="dragon_parts-horn"></span></div>
+                    <div class="col l6 detail-icon"><i class="dragon_part-pill tooltipped" data-position="top" data-tooltip="Ear">Ear</i> <span class="dragon_parts-ear"></span></div>
+                    <div class="col l6 detail-icon"><i class="dragon_part-pill tooltipped" data-position="top" data-tooltip="Wing">Wings</i> <span class="dragon_parts-wing"></span></div>
+                    <div class="col l6 detail-icon"><i class="dragon_part-pill tooltipped" data-position="top" data-tooltip="Tail">Tail</i> <span class="dragon_parts-tail"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dragon_details col l6">
+              <p class="detail_section">Skills</p>
+              <div class="row">
+                <div class="col l6">
+                  <div class="card dragon_card">
+                    <div class="card-image">
+                      <img class="dragon_skill1-image" src="https://static.dragonmainland.io/img/aae68c81d44e638f814e0d05675330a2.png">
+                      <button class="btn-floating waves-effect waves-light yellow skill_stats skill_stats-energy">
+                        <p class="dragon_skill1-energy"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light red skill_stats skill_stats-damage">
+                        <p class="dragon_skill1-damage">
+                      </button>
+                      <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
+                        <p class="dragon_skill1-shield"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
+                        <p class="dragon_skill1-level"></p>
+                      </button>
+                    </div>
+                    <div class="card-content dragon_card-content1">
+                      <p class="dragon_skill-title dragon_skill1"></p>
+                      <p class="dragon_skill-part1"></p>
+                      <p class="dragon_skill1-description"></p>
+                    </div>
+
+                    <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                      <div class="dragon_skill1-type"></div>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col l6">
+                  <div class="card dragon_card">
+                    <div class="card-image">
+                      <img class="dragon_skill2-image" src="https://static.dragonmainland.io/img/aae68c81d44e638f814e0d05675330a2.png">
+                      <button class="btn-floating waves-effect waves-light yellow skill_stats skill_stats-energy">
+                        <p class="dragon_skill2-energy"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light red skill_stats skill_stats-damage">
+                        <p class="dragon_skill2-damage">
+                      </button>
+                      <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
+                        <p class="dragon_skill2-shield"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
+                        <p class="dragon_skill2-level"></p>
+                      </button>
+                    </div>
+                    <div class="card-content dragon_card-content2">
+                      <p class="dragon_skill-title dragon_skill2"></p>
+                      <p class="dragon_skill-part2"></p>
+                      <p class="dragon_skill2-description"></p>
+                    </div>
+
+                    <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                      <div class="dragon_skill2-type"></div>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col l6 skill_spacer">
+                  <div class="card dragon_card">
+                    <div class="card-image">
+                      <img class="dragon_skill3-image" src="https://static.dragonmainland.io/img/aae68c81d44e638f814e0d05675330a2.png">
+                      <button class="btn-floating waves-effect waves-light yellow skill_stats skill_stats-energy">
+                        <p class="dragon_skill3-energy"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light red skill_stats skill_stats-damage">
+                        <p class="dragon_skill3-damage">
+                      </button>
+                      <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
+                        <p class="dragon_skill3-shield"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
+                        <p class="dragon_skill3-level"></p>
+                      </button>
+                    </div>
+                    <div class="card-content dragon_card-content3">
+                      <p class="dragon_skill-title dragon_skill3"></p>
+                      <p class="dragon_skill-part3"></p>
+                      <p class="dragon_skill3-description"></p>
+                    </div>
+
+                    <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                      <div class="dragon_skill3-type"></div>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col l6 skill_spacer">
+                  <div class="card dragon_card">
+                    <div class="card-image">
+                      <img class="dragon_skill4-image" src="https://static.dragonmainland.io/img/aae68c81d44e638f814e0d05675330a2.png">
+                      <button class="btn-floating waves-effect waves-light yellow skill_stats skill_stats-energy">
+                        <p class="dragon_skill4-energy"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light red skill_stats skill_stats-damage">
+                        <p class="dragon_skill4-damage">
+                      </button>
+                      <button class="btn-floating waves-effect waves-light blue skill_stats skill_stats-shield">
+                        <p class="dragon_skill4-shield"></p>
+                      </button>
+                      <button class="btn-floating waves-effect waves-light orange skill_stats skill_stats-level z-depth-0">
+                        <p class="dragon_skill4-level"></p>
+                      </button>
+                    </div>
+                    <div class="card-content dragon_card-content4">
+                      <p class="dragon_skill-title dragon_skill4"></p>
+                      <p class="dragon_skill-part4"></p>
+                      <p class="dragon_skill4-description"></p>
+                    </div>
+
+                    <button class="btn-floating waves-effect waves-light white skill_stats skill_stats-type z-depth-0">
+                      <div class="dragon_skill4-type"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
