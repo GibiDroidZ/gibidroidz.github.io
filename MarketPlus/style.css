@@ -220,12 +220,16 @@
   background-size: 160px;
 }
 
-.product_ce {
+.display_block {
   display: block;
 }
 
 .product_icons {
   margin-right: 5px;
+}
+
+.product_icons i {
+  margin-right: 2px;
 }
 
 .product_item .product_no,
@@ -362,10 +366,17 @@
   width: 60px;
   padding: 5px 15px;
   border-radius: 50px;
-  background-color: #e39b1b;
-  color: white;
+  border: 2px solid #e39b1b;
+  color: #e39b1b;
+  background-color: white;
   font-weight: bold;
   font-size: 14px;
+}
+
+.product_price a img {
+  height: 30px;
+  margin-bottom: -10px;
+  margin-left: -10px;
 }
 
 .dragon_body-egg {
@@ -375,7 +386,7 @@
 }
 
 .dragon_egg {
-  margin: 30px 0;
+  margin: 18px 0;
 }
 
 .modal_overlay {

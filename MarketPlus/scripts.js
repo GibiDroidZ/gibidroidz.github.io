@@ -36,9 +36,10 @@
     $('.change_message').addClass('hide');
   });
 
+
+
   document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, {});
+
 
     // Set selected from URL
     var j;
@@ -109,8 +110,16 @@
         $('#slider_CE-min').val(onURL_CE[0]);
         $('#slider_CE-max').val(onURL_CE[1]);
 
+        $('.modal-trigger').click(function() {
+          alert();
+          //alert($(this).attr('data-target'));
+        });
       }
     }, delayInMilliseconds);
+
+    if (sort != '') {
+      $('.filter_sort select').val(sort);
+    }
   });
 
   // Parallax Settings
@@ -160,6 +169,22 @@
     $("#slider_bc-max").val($("#filter_breedCount").slider("values", 1));
   });
 
+  $('#slider_bc-min').change(function() {
+    $("#filter_breedCount").slider("values", 0, $(this).val());
+  });
+
+  $('#slider_bc-max').change(function() {
+    $("#filter_breedCount").slider("values", 1, $(this).val());
+  });
+
+  $('#slider_CE-min').change(function() {
+    $("#filter_CE").slider("values", 0, $(this).val());
+  });
+
+  $('#slider_CE-max').change(function() {
+    $("#filter_CE").slider("values", 1, $(this).val());
+  });
+
   var currentPage;
 
   var URL_race = [];
@@ -167,7 +192,7 @@
   var URL_breedCount = [];
   var URL_CE = [];
   //var URL_sort;
-  var URL_sort = '"sortRole":2,"sortType":1';
+  //var URL_sort = '"sortRole":2,"sortType":1';
   var URL_page = '1';
 
   const queryString = window.location.search;
@@ -176,14 +201,40 @@
   const form = urlParams.get('form') || ''; //1. Egg | 2. Adult
   const breedCount = urlParams.get('breedCount') || '';
   const ce = urlParams.get('ce') || '';
-  const sort = urlParams.get('sort') || URL_sort;
+  var sort = urlParams.get('sort') || '1';
+  var sortParam;
   const page = urlParams.get('page') || URL_page;
+  returnSort(sort);
+
+  function returnSort(sort) {
+    switch (sort) {
+      case '1':
+        sortParam = '"sortRole":2,"sortType":1';
+        break;
+
+      case '2':
+        sortParam = '"sortRole":1,"sortType":0';
+        break;
+
+      case '3':
+        sortParam = '"sortRole":1,"sortType":1';
+        break;
+
+      case '4':
+        sortParam = '"sortRole":0,"sortType":0';
+        break;
+
+      case '5':
+        sortParam = '"sortRole":0,"sortType":1';
+        break;
+      default:
+
+        //return sortParam;
+    }
+  }
 
   // Apply filters
   $('.apply_Filter').click(function() {
-
-    var base_URL = 'gibidroidz.github.io/MarketPlus/index.html?';
-
     if ($('#filter_water').is(":checked"))
       URL_race.push('1');
 
@@ -205,29 +256,7 @@
     if ($('#filter_adult').is(":checked"))
       URL_form.push('2');
 
-    switch ($('.filter_sort select').val()) {
-      case '1':
-        URL_sort = '"sortRole":2,"sortType":1';
-        break;
-
-      case '2':
-        URL_sort = '"sortRole":1,"sortType":0';
-        break;
-
-      case '3':
-        URL_sort = '"sortRole":1,"sortType":1';
-        break;
-
-      case '4':
-        URL_sort = '"sortRole":0,"sortType":0';
-        break;
-
-      case '5':
-        URL_sort = '"sortRole":0,"sortType":1';
-        break;
-      default:
-
-    }
+    URL_sort = $('.filter_sort select').val();
 
     URL_breedCount.push($('#slider_bc-min').val());
     URL_breedCount.push($('#slider_bc-max').val());
@@ -245,6 +274,28 @@
     location.href = 'index.html?' + new_URL;
   });
 
+  // Reset Filter
+  $('.reset_Filter').click(function() {
+    $('#filter_water').prop('checked', false);
+    $('#filter_fire').prop('checked', false);
+    $('#filter_storm').prop('checked', false);
+    $('#filter_rock').prop('checked', false);
+    $('#filter_thunder').prop('checked', false);
+
+    $('#filter_egg').prop('checked', false);
+    $('#filter_adult').prop('checked', false);
+
+    $('#filter_breedCount').slider('values', 0, '0');
+    $('#filter_breedCount').slider('values', 1, '7');
+    $('#slider_bc-min').val('0');
+    $('#slider_bc-max').val('7');
+
+    $('#filter_CE').slider('values', 0, '26702');
+    $('#filter_CE').slider('values', 1, '49008');
+    $('#slider_CE-min').val('26702');
+    $('#slider_CE-max').val('49008');
+  });
+
 
   // Races:
   // 1. Water || 2. Fire || 3. Rock || 4. Storm || 5. Thunder
@@ -259,7 +310,7 @@
   //   1. Highest Price
   // 2. Latest
 
-  var query = '{"clazz":[' + race + '],"limit":100,"page":1,"stage":[' + form + '],"saleType":[],' + sort + ',"dna":[],"attackArr":[40,88],"defenseArr":[40,88],"healthArr":[40,88],"speedArr":[40,88],"intelligenceArr":[40,88],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
+  var query = '{"clazz":[' + race + '],"limit":100,"page":1,"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[],"attackArr":[40,88],"defenseArr":[40,88],"healthArr":[40,88],"speedArr":[40,88],"intelligenceArr":[40,88],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
   $.ajax({
     type: "POST",
     url: 'https://dragonmainland.io/api/market/product/page',
@@ -269,6 +320,7 @@
     dataType: "json",
     success: function(data) {
 
+      console.log(data.data)
       var product = data.data.list;
       var totalPage = data.data.totalPages;
 
@@ -291,63 +343,80 @@
       for (var i = 0; i < product.length; i++) {
 
         // Get mutation/tag
-        if (product[i].heroVo.mutation == 0) {
-          p_tag = '';
-          p_tagClass = '';
+        switch (product[i].heroVo.mutation) {
+          case 0:
+            p_tag = '';
+            p_tagClass = '';
+            break;
+
+          case -2:
+            p_tag = 'Negative';
+            p_tagClass = 'product_tag-negative';
+            break;
+
+          case 2:
+            p_tag = 'Rare';
+            p_tagClass = 'product_tag-rare';
+            break;
+
+          case 4:
+            p_tag = 'Mystic';
+            p_tagClass = 'product_tag-mystic';
+            break;
+          default:
+
         }
 
-        if (product[i].heroVo.mutation == -2) {
-          p_tag = 'Negative';
-          p_tagClass = 'product_tag-negative';
-        }
-
-        if (product[i].heroVo.mutation == 2) {
-          p_tag = 'Rare';
-          p_tagClass = 'product_tag-rare';
-        }
-
-        if (product[i].heroVo.mutation == 4) {
-          p_tag = 'Mystic';
-          p_tagClass = 'product_tag-mystic';
-        }
-
-        if (product[i].heroVo == 0 && product[i].heroVo == 0) {
+        if (product[i].heroVo.father == 0 && product[i].heroVo.mother == 0) {
           p_tag = 'Genesis';
           p_tagClass = 'product_tag-genesis';
         }
 
         // Get class
-        if (product[i].heroVo.clazz == 2) {
-          p_class = 'dragon_type-fire';
-          p_eggType = 'dragon-FireDragonEgg';
+        switch (product[i].heroVo.clazz) {
+          case 2:
+            p_class = 'dragon_type-fire';
+            p_eggType = 'dragon-FireDragonEgg';
+            break;
+
+          case 1:
+            p_class = 'dragon_type-water';
+            p_eggType = 'dragon-WaterDragonEgg';
+            break;
+
+          case 4:
+            p_class = 'dragon_type-storm';
+            p_eggType = 'dragon-StormDragonEgg';
+            break;
+
+          case 3:
+            p_class = 'dragon_type-rock';
+            p_eggType = 'dragon-RockDragonEgg';
+            break;
+
+          case 5:
+            p_class = 'dragon_type-thunder';
+            p_eggType = 'dragon-ThunderDragonEgg';
+            break;
+          default:
         }
 
-        if (product[i].heroVo.clazz == 1) {
-          p_class = 'dragon_type-water';
-          p_eggType = 'dragon-WaterDragonEgg';
-        }
-
-        if (product[i].heroVo.clazz == 3) {
-          p_class = 'dragon_type-rock';
-          p_eggType = 'dragon-RockDragonEgg';
-        }
-
-        if (product[i].heroVo.clazz == 4) {
-          p_class = 'dragon_type-storm';
-          p_eggType = 'dragon-StormDragonEgg';
-        }
-
-        if (product[i].heroVo.clazz == 5) {
-          p_class = 'dragon_type-thunder';
-          p_eggType = 'dragon-ThunderDragonEgg';
-        }
 
         if (product[i].heroVo.status == 1) {
-          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><div class="dragon_body dragon_egg"><div class="activator dragon_body-egg ' + p_eggType + '"></div><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank">' + product[i].heroProduct.price + '</a></p></div></div>';
+          p_tag = '';
+          p_tagClass = '';
+
+          if (product[i].heroVo.father == 0 && product[i].heroVo.mother == 0) {
+            p_tag = 'Genesis';
+            p_tagClass = 'product_tag-genesis';
+          }
+
+          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><div data-target="modal1" class="modal-trigger dragon_body dragon_egg"><div class="activator dragon_body-egg ' + p_eggType + '"></div><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank">' + product[i].heroProduct.price + '</a></p></div></div>';
+
         }
 
         if (product[i].heroVo.status == 2) {
-          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><p class="product_ce"><i class="fas fa-dumbbell"></i>' + product[i].heroVo.ce + '</p><span class="product_icons"><i class="fas fa-egg"></i>' + product[i].heroVo.breedCount + '</span><span class="product_icons"><i class="fas fa-heart"></i>' + product[i].heroVo.health + '</span><span class="product_icons"><i class="fas fa-sword"></i>' + product[i].heroVo.attack + '</span><span class="product_icons"><i class="fas fa-shield"></i>' + product[i].heroVo.defend + '</span><span class="product_icons"><i class="fas fa-boot"></i>' + product[i].heroVo.speed + '</span><span class="product_icons"><i class="fas fa-fire"></i></span><div class="dragon_body" data-target="modal1" class="btn modal-trigger"><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank">' + product[i].heroProduct.price + '</a></p></div></div>';
+          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><a href="../CheckerPlus/index.html?dragon=' + product[i].heroVo.no +'" target="_blank" class="right"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="display_block"><span class="product_icons"><i class="fas fa-egg"></i>' + product[i].heroVo.breedCount + '</span><span class="product_icons"><i class="fas fa-dumbbell"></i>' + product[i].heroVo.ce + '</span></div><span class="product_icons"><i class="fas fa-heart"></i>' + product[i].heroVo.health + '</span><span class="product_icons"><i class="fas fa-sword"></i>' + product[i].heroVo.attack + '</span><span class="product_icons"><i class="fas fa-shield"></i>' + product[i].heroVo.defend + '</span><span class="product_icons"><i class="fas fa-boot"></i>' + product[i].heroVo.speed + '</span><span class="product_icons"><i class="fas fa-fire"></i>' + product[i].heroVo.intellect + '</span><div data-target="modal1" class="modal-trigger dragon_body" data-target="modal1" class="btn modal-trigger"><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank"><img src="assets/DMS_Logo.png" />' + product[i].heroProduct.price + '</a></p></div></div>';
         }
 
         $(".dragon-" + product[i].heroVo.no + " .dragon_body-eyes").attr("class", 'activator dragon_body-eyes dragon-' + product[i].heroVo.parts[0].dnaNameEn.replace(/\s/g, ''));

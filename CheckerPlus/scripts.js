@@ -63,7 +63,19 @@ function parallax(e) {
 $(".getInput").click(function() {
   var inputData = '{"no":"' + $(".dragonNo").val() + '"}';
   //var inputData = '{"no":"21887"}';
+  retrieveDragon(inputData);
+  var newURL = 'index.html?dragon=' + $(".dragonNo").val();
+  window.history.replaceState(null, null, newURL );
+});
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const dragon = urlParams.get('dragon') || '';
+
+var inputData = '{"no":"' + dragon + '"}';
+retrieveDragon(inputData);
+
+function retrieveDragon(inputData) {
   $.ajax({
     type: "POST",
     url: 'https://dragonmainland.io/api/game/hero/getHeroDetailByNo',
@@ -841,4 +853,4 @@ $(".getInput").click(function() {
             */
     }
   });
-});
+}
