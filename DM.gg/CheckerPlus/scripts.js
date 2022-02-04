@@ -122,7 +122,7 @@ function retrieveDragon(inputData) {
       }
 
       if (dragons.data.mutation == -2) {
-        $(".dragon_tag").html('Negative mutation');
+        $(".dragon_tag").html('Negative');
         $(".dragon_tag").removeClass().addClass('dragon_tag dragon_tab-negative');
       }
 

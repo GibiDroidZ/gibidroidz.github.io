@@ -39,7 +39,8 @@
         TO DO: <br>
         1. Allow multiple pages to be displayed<br>
         2. Responsiveness issue <br />
-        3. Add additional Stat filter <br />
+        3. Add Parts filter <br />
+        4. Arrange Filter using tabs and accordions
       </p>
       <p class="small-text">Want to help the project? Join my discord <b><i><a href="https://discord.gg/MkKbAYFg9F">here</a></i></b></p>
 
@@ -60,6 +61,7 @@
     <p><b>Changelogs:</b></p>
     <i class="fa fa-close change_dismiss"></i>
     <p class="small-text">
+      <b>02/05/22.</b> Released v0.0.3. Added Stat, Max Display filters and reworked Sort. <br />
       <b>02/04/22.</b> Released v0.0.2. Fixed various bugs and integrated to Checker +. <br />
       <b>02/03/22.</b> Released v0.0.1. Release first initial version of Market +. <br />
     </p>
@@ -76,65 +78,108 @@
           </a>
         </div>
 
-        <div class="categ_general">
-          <p class="categ_label">Race</p>
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_fire" />
-            <span>Fire</span>
-          </label>
+        <div class="filterCategories">
+          <div class="categ_general">
+            <p class="categ_label">Race</p>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_fire" />
+              <span>Fire</span>
+            </label>
 
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_water" />
-            <span>Water</span>
-          </label>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_water" />
+              <span>Water</span>
+            </label>
 
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_storm" />
-            <span>Storm</span>
-          </label>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_storm" />
+              <span>Storm</span>
+            </label>
 
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_rock" />
-            <span>Rock</span>
-          </label>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_rock" />
+              <span>Rock</span>
+            </label>
 
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_thunder" />
-            <span>Thunder</span>
-          </label>
-        </div>
-
-        <div class="categ_stag">
-          <p class="categ_label">Form</p>
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_egg" />
-            <span>Egg</span>
-          </label>
-
-          <label>
-            <input type="checkbox" class="reset-checkbox" id="filter_adult" />
-            <span>Adult</span>
-          </label>
-        </div>
-
-        <div class="categ_breedCount">
-          <p class="categ_label">Breed Count</p>
-
-          <input type="text" id="slider_bc-min" class="browser-default left" />
-          <input type="text" id="slider_bc-max" class="browser-default right" />
-          <div class="categ_bc-container">
-            <div id="filter_breedCount"></div>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_thunder" />
+              <span>Thunder</span>
+            </label>
           </div>
 
-        </div>
+          <div class="categ_stag">
+            <p class="categ_label">Form</p>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_egg" />
+              <span>Egg</span>
+            </label>
 
-        <div class="categ_CE">
-          <p class="categ_label">CE</p>
+            <label>
+              <input type="checkbox" class="reset-checkbox" id="filter_adult" />
+              <span>Adult</span>
+            </label>
+          </div>
 
-          <input type="text" id="slider_CE-min" class="browser-default left" />
-          <input type="text" id="slider_CE-max" class="browser-default right" />
-          <div class="categ_CE-container">
-            <div id="filter_CE"></div>
+          <div class="categ_breedCount">
+            <p class="categ_label">Breed Count</p>
+
+            <input type="text" id="slider_bc-min" class="browser-default left" />
+            <input type="text" id="slider_bc-max" class="browser-default right" />
+            <div class="categ_bc-container">
+              <div id="filter_breedCount"></div>
+            </div>
+          </div>
+
+          <div class="categ_CE">
+            <p class="categ_label">CE</p>
+
+            <input type="text" id="slider_CE-min" class="browser-default left" />
+            <input type="text" id="slider_CE-max" class="browser-default right" />
+            <div class="categ_CE-container">
+              <div id="filter_CE"></div>
+            </div>
+          </div>
+
+          <div class="categ_Stat">
+            <p class="categ_label">Attack</p>
+
+            <input type="text" id="slider_attack-min" class="browser-default left" />
+            <input type="text" id="slider_attack-max" class="browser-default right" />
+            <div class="categ_attack-container">
+              <div id="filter_attack"></div>
+            </div>
+
+            <p class="categ_label">Defense</p>
+
+            <input type="text" id="slider_defense-min" class="browser-default left" />
+            <input type="text" id="slider_defense-max" class="browser-default right" />
+            <div class="categ_defense-container">
+              <div id="filter_defense"></div>
+            </div>
+
+            <p class="categ_label">Health</p>
+
+            <input type="text" id="slider_health-min" class="browser-default left" />
+            <input type="text" id="slider_health-max" class="browser-default right" />
+            <div class="categ_health-container">
+              <div id="filter_health"></div>
+            </div>
+
+            <p class="categ_label">Speed</p>
+
+            <input type="text" id="slider_speed-min" class="browser-default left" />
+            <input type="text" id="slider_speed-max" class="browser-default right" />
+            <div class="categ_speed-container">
+              <div id="filter_speed"></div>
+            </div>
+
+            <p class="categ_label">Life Force</p>
+
+            <input type="text" id="slider_intellect-min" class="browser-default left" />
+            <input type="text" id="slider_intellect-max" class="browser-default right" />
+            <div class="categ_intellect-container">
+              <div id="filter_intellect"></div>
+            </div>
           </div>
         </div>
 
@@ -146,10 +191,11 @@
     </div>
 
     <div class="main_content">
-      <h1>Market +</h1>
+      <h1>Market <i class="fa-solid fa-square-plus marketPlusIcon"></i></h1>
 
       <div class="filter_sort">
         <p class="totalDragons"></p>
+        <span class="showingMaxDragons"><i></i></span>
 
         <div class="pages">
           <ul class="pagination">
@@ -161,13 +207,33 @@
           </ul>
         </div>
 
-        <select class="browser" name="">
+        <div class="input-field selectSortType right">
+          <select>
+            <option value="1">Latest</option>
+            <option value="2">Lowest Price</option>
+            <option value="3">Highest Price</option>
+            <option value="4">Lowest ID</option>
+            <option value="5">Highest ID</option>
+          </select>
+          <label>Sort Type</label>
+        </div>
+
+        <div class="input-field selectMaxDisplay right">
+          <select>
+            <option value="30">30</option>
+            <option value="60">60</option>
+            <option value="90">90</option>
+          </select>
+          <label>Max Display</label>
+        </div>
+
+        <!--select class="browser" name="">
           <option value="1">Latest</option>
           <option value="2">Lowest Price</option>
           <option value="3">Highest Price</option>
           <option value="4">Lowest ID</option>
           <option value="5">Highest ID</option>
-        </select>
+        </select-->
       </div>
 
       <div id="products" class="row">

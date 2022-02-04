@@ -38,8 +38,207 @@
 
 
 
-  document.addEventListener('DOMContentLoaded', function() {
+  // Parallax Settings
+  document.addEventListener("mousemove", parallax);
+  const elem = document.querySelector("#parallax");
 
+  function parallax(e) {
+    let _w = window.innerWidth / 2;
+    let _h = window.innerHeight / 2;
+    let _mouseX = e.clientX;
+    let _mouseY = e.clientY;
+    let _depth1 = `${20 - (_mouseX - _w) * 0.001}% ${20 - (_mouseY - _h) * 0.001}%`;
+    let _depth2 = `${20 - (_mouseX - _w) * 0.002}% ${20 - (_mouseY - _h) * 0.002}%`;
+    let _depth3 = `${20 - (_mouseX - _w) * 0.003}% ${20 - (_mouseY - _h) * 0.003}%`;
+    let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+    elem.style.backgroundPosition = x;
+  }
+
+  // Fix Slider Issue
+  $(function() {
+    $("#filter_CE").slider({
+      range: true,
+      min: 26702,
+      max: 49008,
+      values: [26702, 49008],
+      slide: function(event, ui) {
+        $("#slider_CE-min").val(ui.values[0]);
+        $("#slider_CE-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_CE-min").val($("#filter_CE").slider("values", 0));
+    $("#slider_CE-max").val($("#filter_CE").slider("values", 1));
+
+    $('#slider_CE-min').change(function() {
+      $("#filter_CE").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_CE-max').change(function() {
+      $("#filter_CE").slider("values", 1, $(this).val());
+    });
+
+    $("#filter_breedCount").slider({
+      range: true,
+      min: 0,
+      max: 7,
+      values: [0, 7],
+      slide: function(event, ui) {
+        $("#slider_bc-min").val(ui.values[0]);
+        $("#slider_bc-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_bc-min").val($("#filter_breedCount").slider("values", 0));
+    $("#slider_bc-max").val($("#filter_breedCount").slider("values", 1));
+
+    $('#slider_bc-min').change(function() {
+      $("#filter_breedCount").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_bc-max').change(function() {
+      $("#filter_breedCount").slider("values", 1, $(this).val());
+    });
+
+    $("#filter_attack").slider({
+      range: true,
+      min: 40,
+      max: 88,
+      values: [40, 88],
+      slide: function(event, ui) {
+        $("#slider_attack-min").val(ui.values[0]);
+        $("#slider_attack-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_attack-min").val($("#filter_attack").slider("values", 0));
+    $("#slider_attack-max").val($("#filter_attack").slider("values", 1));
+
+    $('#slider_attack-min').change(function() {
+      $("#filter_attack").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_attack-max').change(function() {
+      $("#filter_attack").slider("values", 1, $(this).val());
+    });
+
+    $("#filter_defense").slider({
+      range: true,
+      min: 40,
+      max: 88,
+      values: [40, 88],
+      slide: function(event, ui) {
+        $("#slider_defense-min").val(ui.values[0]);
+        $("#slider_defense-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_defense-min").val($("#filter_defense").slider("values", 0));
+    $("#slider_defense-max").val($("#filter_defense").slider("values", 1));
+
+    $('#slider_defense-min').change(function() {
+      $("#filter_defense").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_defense-max').change(function() {
+      $("#filter_defense").slider("values", 1, $(this).val());
+    });
+
+    $("#filter_health").slider({
+      range: true,
+      min: 40,
+      max: 88,
+      values: [40, 88],
+      slide: function(event, ui) {
+        $("#slider_health-min").val(ui.values[0]);
+        $("#slider_health-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_health-min").val($("#filter_attack").slider("values", 0));
+    $("#slider_health-max").val($("#filter_attack").slider("values", 1));
+
+    $('#slider_health-min').change(function() {
+      $("#filter_health").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_health-max').change(function() {
+      $("#filter_health").slider("values", 1, $(this).val());
+    });
+
+    $("#filter_speed").slider({
+      range: true,
+      min: 40,
+      max: 88,
+      values: [40, 88],
+      slide: function(event, ui) {
+        $("#slider_speed-min").val(ui.values[0]);
+        $("#slider_speed-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_speed-min").val($("#filter_attack").slider("values", 0));
+    $("#slider_speed-max").val($("#filter_attack").slider("values", 1));
+
+    $('#slider_speed-min').change(function() {
+      $("#filter_speed").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_speed-max').change(function() {
+      $("#filter_speed").slider("values", 1, $(this).val());
+    });
+
+    $("#filter_intellect").slider({
+      range: true,
+      min: 40,
+      max: 88,
+      values: [40, 88],
+      slide: function(event, ui) {
+        $("#slider_intellect-min").val(ui.values[0]);
+        $("#slider_intellect-max").val(ui.values[1]);
+      }
+    });
+    $("#slider_intellect-min").val($("#filter_attack").slider("values", 0));
+    $("#slider_intellect-max").val($("#filter_attack").slider("values", 1));
+
+    $('#slider_intellect-min').change(function() {
+      $("#filter_intellect").slider("values", 0, $(this).val());
+    });
+
+    $('#slider_intellect-max').change(function() {
+      $("#filter_intellect").slider("values", 1, $(this).val());
+    });
+  });
+
+  var currentPage;
+
+  var URL_race = [];
+  var URL_form = [];
+  var URL_breedCount = [];
+  var URL_CE = [];
+  var URL_attack = [];
+  var URL_defense = [];
+  var URL_health = [];
+  var URL_speed = [];
+  var URL_intellect = [];
+  //var URL_sort;
+  //var URL_sort = '"sortRole":2,"sortType":1';
+  var URL_maxDisplay;
+  var URL_page = '1';
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const race = urlParams.get('race') || ''; //1. Water | 2. Fire | 3. Storm | 4. Rock | 5. Thunder
+  const form = urlParams.get('form') || ''; //1. Egg | 2. Adult
+  const breedCount = urlParams.get('breedCount') || '';
+  const ce = urlParams.get('ce') || '';
+  const attack = urlParams.get('attack') || '';
+  const defense = urlParams.get('defense') || '';
+  const health = urlParams.get('health') || '';
+  const speed = urlParams.get('speed') || '';
+  const intellect = urlParams.get('intellect') || '';
+  var sort = urlParams.get('sort') || '1';
+  var sortParam;
+  var maxDisplay = urlParams.get('maxDisplay') || '30';
+  const page = urlParams.get('page') || URL_page;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, {});
 
     // Set selected from URL
     var j;
@@ -97,7 +296,6 @@
 
         $('#slider_bc-min').val(onURL_breedCount[0]);
         $('#slider_bc-max').val(onURL_breedCount[1]);
-
       }
 
       if (ce != '') {
@@ -109,101 +307,50 @@
 
         $('#slider_CE-min').val(onURL_CE[0]);
         $('#slider_CE-max').val(onURL_CE[1]);
-
-        $('.modal-trigger').click(function() {
-          alert();
-          //alert($(this).attr('data-target'));
-        });
       }
     }, delayInMilliseconds);
 
-    if (sort != '') {
-      $('.filter_sort select').val(sort);
+
+    if (sort != '' || sort != null) {
+      var sortLabel;
+      switch (sort) {
+        case '1':
+          sortLabel = 'Latest';
+          break;
+
+        case '2':
+          sortLabel = 'Lowest Price';
+          break;
+
+        case '3':
+          sortLabel = 'Highest Price';
+          break;
+
+        case '4':
+          sortLabel = 'Lowest ID';
+          break;
+
+        case '5':
+          sortLabel = 'Highest ID';
+          break;
+        default:
+
+      }
+
+      $('.filter_sort .selectSortType select').val(sort);
+      $('.filter_sort .selectSortType input').val(sortLabel);
+      $('.filter_sort .selectSortType ul li').removeClass();
+      $('.filter_sort .selectSortType ul li:nth-child(' + sort + ')').addClass('selected');
+    }
+
+    if (maxDisplay != '' || maxDisplay != null) {
+      $('.filter_sort .selectMaxDisplay input').val(maxDisplay);
+      $('.filter_sort .selectMaxDisplay select').val(maxDisplay);
+      $('.filter_sort .selectMaxDisplay ul li').removeClass();
+      $('.filter_sort .selectMaxDisplay ul li').addClass('selected');
     }
   });
 
-  // Parallax Settings
-  document.addEventListener("mousemove", parallax);
-  const elem = document.querySelector("#parallax");
-
-  function parallax(e) {
-    let _w = window.innerWidth / 2;
-    let _h = window.innerHeight / 2;
-    let _mouseX = e.clientX;
-    let _mouseY = e.clientY;
-    let _depth1 = `${20 - (_mouseX - _w) * 0.001}% ${20 - (_mouseY - _h) * 0.001}%`;
-    let _depth2 = `${20 - (_mouseX - _w) * 0.002}% ${20 - (_mouseY - _h) * 0.002}%`;
-    let _depth3 = `${20 - (_mouseX - _w) * 0.003}% ${20 - (_mouseY - _h) * 0.003}%`;
-    let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-    elem.style.backgroundPosition = x;
-  }
-
-  // Fix Slider Issue
-  $(function() {
-    $("#filter_CE").slider({
-      range: true,
-      min: 26702,
-      max: 49008,
-      values: [26702, 49008],
-      slide: function(event, ui) {
-        $("#slider_CE-min").val(ui.values[0]);
-        $("#slider_CE-max").val(ui.values[1]);
-      }
-    });
-    $("#slider_CE-min").val($("#filter_CE").slider("values", 0));
-    $("#slider_CE-max").val($("#filter_CE").slider("values", 1));
-  });
-
-  $(function() {
-    $("#filter_breedCount").slider({
-      range: true,
-      min: 0,
-      max: 7,
-      values: [0, 7],
-      slide: function(event, ui) {
-        $("#slider_bc-min").val(ui.values[0]);
-        $("#slider_bc-max").val(ui.values[1]);
-      }
-    });
-    $("#slider_bc-min").val($("#filter_breedCount").slider("values", 0));
-    $("#slider_bc-max").val($("#filter_breedCount").slider("values", 1));
-  });
-
-  $('#slider_bc-min').change(function() {
-    $("#filter_breedCount").slider("values", 0, $(this).val());
-  });
-
-  $('#slider_bc-max').change(function() {
-    $("#filter_breedCount").slider("values", 1, $(this).val());
-  });
-
-  $('#slider_CE-min').change(function() {
-    $("#filter_CE").slider("values", 0, $(this).val());
-  });
-
-  $('#slider_CE-max').change(function() {
-    $("#filter_CE").slider("values", 1, $(this).val());
-  });
-
-  var currentPage;
-
-  var URL_race = [];
-  var URL_form = [];
-  var URL_breedCount = [];
-  var URL_CE = [];
-  //var URL_sort;
-  //var URL_sort = '"sortRole":2,"sortType":1';
-  var URL_page = '1';
-
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const race = urlParams.get('race') || ''; //1. Water | 2. Fire | 3. Storm | 4. Rock | 5. Thunder
-  const form = urlParams.get('form') || ''; //1. Egg | 2. Adult
-  const breedCount = urlParams.get('breedCount') || '';
-  const ce = urlParams.get('ce') || '';
-  var sort = urlParams.get('sort') || '1';
-  var sortParam;
-  const page = urlParams.get('page') || URL_page;
   returnSort(sort);
 
   function returnSort(sort) {
@@ -229,7 +376,6 @@
         break;
       default:
 
-        //return sortParam;
     }
   }
 
@@ -256,7 +402,8 @@
     if ($('#filter_adult').is(":checked"))
       URL_form.push('2');
 
-    URL_sort = $('.filter_sort select').val();
+    URL_sort = $('.filter_sort .selectSortType select').val() || '1';
+    URL_maxDisplay = $('.filter_sort .selectMaxDisplay select').val();
 
     URL_breedCount.push($('#slider_bc-min').val());
     URL_breedCount.push($('#slider_bc-max').val());
@@ -264,12 +411,33 @@
     URL_CE.push($('#slider_CE-min').val());
     URL_CE.push($('#slider_CE-max').val());
 
+    URL_attack.push($('#slider_attack-min').val());
+    URL_attack.push($('#slider_attack-max').val());
+
+    URL_health.push($('#slider_health-min').val());
+    URL_health.push($('#slider_health-max').val());
+
+    URL_speed.push($('#slider_speed-min').val());
+    URL_speed.push($('#slider_speed-max').val());
+
+    URL_defense.push($('#slider_defense-min').val());
+    URL_defense.push($('#slider_defense-max').val());
+
+    URL_intellect.push($('#slider_intellect-min').val());
+    URL_intellect.push($('#slider_intellect-max').val());
+
     var new_URL = '';
     new_URL += 'race=' + URL_race;
     new_URL += '&form=' + URL_form;
     new_URL += '&breedCount=' + URL_breedCount;
     new_URL += '&ce=' + URL_CE;
+    new_URL += '&attack=' + URL_attack;
+    new_URL += '&defense=' + URL_defense;
+    new_URL += '&health=' + URL_health;
+    new_URL += '&speed=' + URL_speed;
+    new_URL += '&intellect=' + URL_intellect;
     new_URL += '&sort=' + URL_sort;
+    new_URL += '&maxDisplay=' + URL_maxDisplay;
     new_URL += '&page=' + URL_page;
     location.href = 'index.html?' + new_URL;
   });
@@ -310,7 +478,7 @@
   //   1. Highest Price
   // 2. Latest
 
-  var query = '{"clazz":[' + race + '],"limit":60,"page":1,"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[],"attackArr":[40,88],"defenseArr":[40,88],"healthArr":[40,88],"speedArr":[40,88],"intelligenceArr":[40,88],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
+  var query = '{"clazz":[' + race + '],"limit":' + maxDisplay + ',"page":' + page + ',"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[],"attackArr":[' + attack + '],"defenseArr":[' + defense + '],"healthArr":[' + health + '],"speedArr":[' + speed + '],"intelligenceArr":[' + intellect + '],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
   $.ajax({
     type: "POST",
     url: 'https://dragonmainland.io/api/market/product/page',
@@ -340,6 +508,7 @@
       var dragonList = document.getElementById('products');
 
       $('.totalDragons').text(data.data.total + ' Dragons');
+      $('.showingMaxDragons i').text('(Showing a total of ' + maxDisplay + ' Dragons)');
       for (var i = 0; i < product.length; i++) {
 
         // Get mutation/tag
@@ -411,12 +580,12 @@
             p_tagClass = 'product_tag-genesis';
           }
 
-          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><a href="../CheckerPlus/index.html?dragon=' + product[i].heroVo.no +'" target="_blank" class="right"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><div data-target="modal1" class="modal-trigger dragon_body dragon_egg"><div class="activator dragon_body-egg ' + p_eggType + '"></div><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank"><img src="../assets/DMS_Logo.png" />' + product[i].heroProduct.price + '</a></p></div></div>';
+          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><a href="../CheckerPlus/index.html?dragon=' + product[i].heroVo.no + '" target="_blank" class="right"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><div data-target="modal1" class="modal-trigger dragon_body dragon_egg"><div class="activator dragon_body-egg ' + p_eggType + '"></div><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank"><img src="../assets/DMS_Logo.png" />' + product[i].heroProduct.price + '</a></p></div></div>';
 
         }
 
         if (product[i].heroVo.status == 2) {
-          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><a href="../CheckerPlus/index.html?dragon=' + product[i].heroVo.no +'" target="_blank" class="right"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="display_block"><span class="product_icons"><i class="fas fa-egg"></i>' + product[i].heroVo.breedCount + '</span><span class="product_icons"><i class="fas fa-dumbbell"></i>' + product[i].heroVo.ce + '</span></div><span class="product_icons"><i class="fas fa-heart"></i>' + product[i].heroVo.health + '</span><span class="product_icons"><i class="fas fa-sword"></i>' + product[i].heroVo.attack + '</span><span class="product_icons"><i class="fas fa-shield"></i>' + product[i].heroVo.defend + '</span><span class="product_icons"><i class="fas fa-boot"></i>' + product[i].heroVo.speed + '</span><span class="product_icons"><i class="fas fa-fire"></i>' + product[i].heroVo.intellect + '</span><div data-target="modal1" class="modal-trigger dragon_body" data-target="modal1" class="btn modal-trigger"><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank"><img src="../assets/DMS_Logo.png" />' + product[i].heroProduct.price + '</a></p></div></div>';
+          dragonList.innerHTML += '<div class="col l2 m4 s6"><div class="product_item dragon-' + product[i].heroVo.no + ' ' + p_class + 'Hover"><p class="product_no ' + p_class + '"> #' + product[i].heroVo.no + ' </p><p class="product_tag ' + p_tagClass + '"> ' + p_tag + '</p><a href="../CheckerPlus/index.html?dragon=' + product[i].heroVo.no + '" target="_blank" class="right"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><div class="display_block"><span class="product_icons"><i class="fas fa-egg"></i>' + product[i].heroVo.breedCount + '</span><span class="product_icons"><i class="fas fa-dumbbell"></i>' + product[i].heroVo.ce + '</span></div><span class="product_icons"><i class="fas fa-heart"></i>' + product[i].heroVo.health + '</span><span class="product_icons"><i class="fas fa-sword"></i>' + product[i].heroVo.attack + '</span><span class="product_icons"><i class="fas fa-shield"></i>' + product[i].heroVo.defend + '</span><span class="product_icons"><i class="fas fa-boot"></i>' + product[i].heroVo.speed + '</span><span class="product_icons"><i class="fas fa-fire"></i>' + product[i].heroVo.intellect + '</span><div data-target="modal1" class="modal-trigger dragon_body" data-target="modal1" class="btn modal-trigger"><div class="dragon_body-tail"></div><div class="dragon_body-horn"></div><div class="dragon_body-ear"></div><div class="dragon_body-body"></div><div class="dragon_body-wing"></div><div class="dragon_body-totem"></div><div class="dragon_body-eyes"></div></div><p class="product_price"><a href="https://dragonmainland.io/#/myMainland/myDragonDetail/' + product[i].heroVo.id + '" target="_blank"><img src="../assets/DMS_Logo.png" />' + product[i].heroProduct.price + '</a></p></div></div>';
         }
 
         $(".dragon-" + product[i].heroVo.no + " .dragon_body-eyes").attr("class", 'activator dragon_body-eyes dragon-' + product[i].heroVo.parts[0].dnaNameEn.replace(/\s/g, ''));

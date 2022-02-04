@@ -96,8 +96,16 @@ a {
 }
 
 .panel {
-  padding: 10px;
+  padding: 10px 20px;
   background-color: RGBA(255, 255, 255, .5);
   border-radius: 10px;
   box-shadow: 0 0 10px RGBA(0, 0, 0, .2);
+}
+
+.padder {
+  margin-bottom: 10px;
+}
+
+.main_content h5 {
+  border-bottom: 1px solid RGBA(0, 0, 0, .5);
 }
