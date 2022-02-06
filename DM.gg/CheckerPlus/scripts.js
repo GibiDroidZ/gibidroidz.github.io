@@ -65,7 +65,7 @@ $(".getInput").click(function() {
   //var inputData = '{"no":"21887"}';
   retrieveDragon(inputData);
   var newURL = 'index.html?dragon=' + $(".dragonNo").val();
-  window.history.replaceState(null, null, newURL );
+  window.history.replaceState(null, null, newURL);
 });
 
 const queryString = window.location.search;
@@ -179,12 +179,160 @@ function retrieveDragon(inputData) {
       $(".dragon_speed").html(dragons.data.speed);
       $(".dragon_lifeForce").html(dragons.data.intellect);
 
-      $(".dragon_parts-eye").html(dragons.data.parts[0].dnaNameEn);
-      $(".dragon_parts-totem").html(dragons.data.parts[1].dnaNameEn);
-      $(".dragon_parts-horn").html(dragons.data.parts[2].dnaNameEn);
-      $(".dragon_parts-ear").html(dragons.data.parts[3].dnaNameEn);
-      $(".dragon_parts-wing").html(dragons.data.parts[4].dnaNameEn);
-      $(".dragon_parts-tail").html(dragons.data.parts[5].dnaNameEn);
+      var part1Mutation;
+      var part2Mutation;
+      var part3Mutation;
+      var part4Mutation;
+      switch (dragons.data.parts[0].mutation) {
+        case -1:
+
+          part1Mutation = '(Negative)';
+          break;
+
+        case 0:
+
+          part1Mutation = '';
+          break;
+
+        case 1:
+
+          part1Mutation = '(Rare)';
+          break;
+
+        case 2:
+
+          part1Mutation = '(Mystic)';
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.parts[1].mutation) {
+        case -1:
+
+          part2Mutation = '(Negative)';
+          break;
+
+        case 0:
+
+          part2Mutation = '';
+          break;
+
+        case 1:
+
+          part2Mutation = '(Rare)';
+          break;
+
+        case 2:
+
+          part2Mutation = '(Mystic)';
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.parts[2].mutation) {
+        case -1:
+
+          part3Mutation = '(Negative)';
+          break;
+
+        case 0:
+
+          part3Mutation = '';
+          break;
+
+        case 1:
+
+          part3Mutation = '(Rare)';
+          break;
+
+        case 2:
+
+          part3Mutation = '(Mystic)';
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.parts[3].mutation) {
+        case -1:
+
+          part4Mutation = '(Negative)';
+          break;
+
+        case 0:
+
+          part4Mutation = '';
+          break;
+
+        case 1:
+
+          part4Mutation = '(Rare)';
+          break;
+
+        case 2:
+
+          part4Mutation = '(Mystic)';
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.parts[4].mutation) {
+        case -1:
+
+          part5Mutation = '(Negative)';
+          break;
+
+        case 0:
+
+          part5Mutation = '';
+          break;
+
+        case 1:
+
+          part5Mutation = '(Rare)';
+          break;
+
+        case 2:
+
+          part5Mutation = '(Mystic)';
+          break;
+
+        default:
+      }
+
+      switch (dragons.data.parts[5].mutation) {
+        case -1:
+
+          part6Mutation = '(Negative)';
+          break;
+
+        case 0:
+
+          part6Mutation = '';
+          break;
+
+        case 1:
+
+          part6Mutation = '(Rare)';
+          break;
+
+        case 2:
+
+          part6Mutation = '(Mystic)';
+          break;
+
+        default:
+      }
+
+      $(".dragon_parts-eye").html(dragons.data.parts[0].dnaNameEn + '<i class="partMutation"> ' + part1Mutation + '</i>');
+      $(".dragon_parts-totem").html(dragons.data.parts[1].dnaNameEn + '<i class="partMutation"> ' + part2Mutation + '</i>');
+      $(".dragon_parts-horn").html(dragons.data.parts[2].dnaNameEn + '<i class="partMutation"> ' + part3Mutation + '</i>');
+      $(".dragon_parts-ear").html(dragons.data.parts[3].dnaNameEn + '<i class="partMutation"> ' + part4Mutation + '</i>');
+      $(".dragon_parts-wing").html(dragons.data.parts[4].dnaNameEn + '<i class="partMutation"> ' + part5Mutation + '</i>');
+      $(".dragon_parts-tail").html(dragons.data.parts[5].dnaNameEn + '<i class="partMutation"> ' + part6Mutation + '</i>');
 
       $(".dragon_body-eyes").attr("class", 'activator dragon_body-eyes dragon-' + dragons.data.parts[0].dnaNameEn.replace(/\s/g, ''));
       $(".dragon_body-totem").attr("class", 'activator dragon_body-totem dragon-' + dragons.data.parts[1].dnaNameEn.replace(/\s/g, ''));

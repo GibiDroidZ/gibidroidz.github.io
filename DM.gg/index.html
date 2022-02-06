@@ -32,7 +32,7 @@
       <p class="categ_label">Tools</p>
       <ul>
         <li><a href="CheckerPlus/index.html">Checker <i class="fa-solid fa-square-plus"></i> <span class="pill">BETA</span></a></li>
-        <li><a href="MarketPlus/index.html" class="tooltipped" data-position="right" data-tooltip="Coming soon!">Market <i class="fa-solid fa-square-plus"></i> <span class="pill">WIP</span></a></li>
+        <li><a href="MarketPlus/index.html">Market <i class="fa-solid fa-square-plus"></i> <span class="pill">WIP</span></a></li>
         <li><a href="#" class="tooltipped" data-position="right" data-tooltip="Coming soon!">Inbreeding Checker</a></li>
       </ul>
 
@@ -42,7 +42,7 @@
       <p class="categ_label">External Tools</p>
       <ul>
         <li><a href="https://dragonmainland.zone/breeding-simulator" class="tooltipped" data-position="right" data-tooltip="Made by DMAC: Lee!" target="_blank">Breeding Simulator</a></li>
-        <li><a href="https://cloud.degoo.com/share/VpWXxhOojt6yJrmMTNkRSw" target="_blank">Download APK <span class="pill">TEMP</span></a></li>
+        <li><a href="https://cloud.degoo.com/share/VpWXxhOojt6yJrmMTNkRSw" class="tooltipped" data-position="right" data-tooltip="Will be removed once the official app link goes up" target="_blank">Download APK <span class="pill">TEMP</span></a></li>
       </ul>
       <div class="creator">
         <a class="btn-floating pulse white"><img class="" src="https://cdn.discordapp.com/avatars/366452806246465537/465a93828fe0c618317c03bbe774512f.webp?size=100" alt=""></a>
@@ -52,7 +52,7 @@
 
     <div class="main_content">
 
-      <h1>DM.gg</i></h1>
+      <h1>DM.gg</h1>
 
       <h4><b>Changelogs</b></h4>
       <div class="row">
@@ -71,6 +71,7 @@
 
             <h5>Checker <i class="fa-solid fa-square-plus"></i></h5>
             <ul>
+              <li><b>02/06/22.</b> Released v0.0.5. Updated parts to display mutation tags.</li>
               <li><b>02/04/22.</b> Released v0.0.4. Optimize code to display Dragon No. in URL.</li>
               <li><b>02/03/22.</b> Released v0.0.3. Updated some UI components.</li>
               <li><b>01/23/22.</b> Released v0.0.2. This includes fixes on missing dragon parts. </li>
@@ -83,6 +84,7 @@
           <div class="panel">
             <h5>Market <i class="fa-solid fa-square-plus"></i> (Early Access)</h5>
             <ul>
+              <li><b>02/06/22.</b> Released v0.0.4. Updated some UI components + fixed slider bug on page load.</li>
               <li><b>02/05/22.</b> Released v0.0.3. Added Stat, Max Display filters and reworked Sort.</li>
               <li><b>02/04/22.</b> Released v0.0.2. Fixed various bugs and integrated to Checker +.</li>
               <li><b>02/03/22.</b> Released v0.0.1. Release first initial version of Market +.</li>
@@ -95,6 +97,10 @@
 
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, {});
+  </script>
 </body>
 
 </html>

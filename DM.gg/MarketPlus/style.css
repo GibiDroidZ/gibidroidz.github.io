@@ -115,6 +115,26 @@
   font-size: inherit;
 }
 
+.filter_tabs li {
+  display: inline-block;
+  width: calc((100% / 3) - 10px);
+  text-transform: uppercase;
+  font-size: 10px;
+  cursor: pointer;
+  color: RGBA(0, 0, 0, .5);
+  border-bottom: 4px solid transparent;
+}
+
+.filter_tabs i {
+  font-size: 20px;
+}
+
+.filter_tabs li.selected {
+  transition: .3s;
+  color: black;
+  border-bottom-color: black;
+}
+
 .filters label {
   color: black;
   display: inline-block;
@@ -144,18 +164,18 @@
 
 .categ_breedCount #filter_breedCount,
 .categ_CE #filter_CE,
-.categ_Stat #filter_attack,
-.categ_Stat #filter_defense,
-.categ_Stat #filter_health,
-.categ_Stat #filter_speed,
-.categ_Stat #filter_intellect {
+.categ_stat #filter_attack,
+.categ_stat #filter_defense,
+.categ_stat #filter_health,
+.categ_stat #filter_speed,
+.categ_stat #filter_intellect {
   border: 0 solid transparent !important;
   height: 3px;
 }
 
 .categ_breedCount .ui-slider-range,
 .categ_CE .ui-slider-range,
-.categ_Stat .ui-slider-range {
+.categ_stat .ui-slider-range {
   background-color: #44a3cf;
   border: 0 solid transparent;
 }
@@ -173,7 +193,7 @@
 
 .categ_breedCount input[type="text"],
 .categ_CE input[type="text"],
-.categ_Stat input[type="text"] {
+.categ_stat input[type="text"] {
   border: 0;
   border-radius: 3px;
   display: inline-block;
@@ -261,6 +281,14 @@
   height: 264px;
 }
 
+.product_item a.right {
+  display: none;
+}
+
+.product_item:hover a.right {
+  display: inline-block;
+}
+
 #products {
   height: calc(100vh - 305px);
   overflow: auto;
@@ -272,7 +300,6 @@
 
 .product_item:hover {
   position: relative;
-  cursor: pointer;
   box-shadow: 0 5px 5px RGBA(0, 0, 0, .2);
 }
 

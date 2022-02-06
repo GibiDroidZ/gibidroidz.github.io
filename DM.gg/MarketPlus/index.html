@@ -40,7 +40,6 @@
         1. Allow multiple pages to be displayed<br>
         2. Responsiveness issue <br />
         3. Add Parts filter <br />
-        4. Arrange Filter using tabs and accordions
       </p>
       <p class="small-text">Want to help the project? Join my discord <b><i><a href="https://discord.gg/MkKbAYFg9F">here</a></i></b></p>
 
@@ -61,6 +60,7 @@
     <p><b>Changelogs:</b></p>
     <i class="fa fa-close change_dismiss"></i>
     <p class="small-text">
+      <b>02/06/22.</b> Released v0.0.4. Updated some UI components + fixed slider bug on page load.<br />
       <b>02/05/22.</b> Released v0.0.3. Added Stat, Max Display filters and reworked Sort. <br />
       <b>02/04/22.</b> Released v0.0.2. Fixed various bugs and integrated to Checker +. <br />
       <b>02/03/22.</b> Released v0.0.1. Release first initial version of Market +. <br />
@@ -79,7 +79,13 @@
         </div>
 
         <div class="filterCategories">
-          <div class="categ_general">
+          <ul class="filter_tabs">
+            <li class="filter_tabs-general selected"><i class="fa-solid fa-feather-pointed"></i><br />General</li>
+            <li class="filter_tabs-part"><i class="fa-solid fa-dragon"></i></i><br />Parts</li>
+            <li class="filter_tabs-stat"><i class="fa-solid fa-ballot-check"></i><br />Stats</li>
+          </ul>
+
+          <div class="categ_general filterCategContainer">
             <p class="categ_label">Race</p>
             <label>
               <input type="checkbox" class="reset-checkbox" id="filter_fire" />
@@ -105,42 +111,46 @@
               <input type="checkbox" class="reset-checkbox" id="filter_thunder" />
               <span>Thunder</span>
             </label>
-          </div>
 
-          <div class="categ_stag">
-            <p class="categ_label">Form</p>
-            <label>
-              <input type="checkbox" class="reset-checkbox" id="filter_egg" />
-              <span>Egg</span>
-            </label>
+            <div class="categ_stage">
+              <p class="categ_label">Form</p>
+              <label>
+                <input type="checkbox" class="reset-checkbox" id="filter_egg" />
+                <span>Egg</span>
+              </label>
 
-            <label>
-              <input type="checkbox" class="reset-checkbox" id="filter_adult" />
-              <span>Adult</span>
-            </label>
-          </div>
+              <label>
+                <input type="checkbox" class="reset-checkbox" id="filter_adult" />
+                <span>Adult</span>
+              </label>
+            </div>
 
-          <div class="categ_breedCount">
-            <p class="categ_label">Breed Count</p>
+            <div class="categ_breedCount">
+              <p class="categ_label">Breed Count</p>
 
-            <input type="text" id="slider_bc-min" class="browser-default left" />
-            <input type="text" id="slider_bc-max" class="browser-default right" />
-            <div class="categ_bc-container">
-              <div id="filter_breedCount"></div>
+              <input type="text" id="slider_bc-min" class="browser-default left" />
+              <input type="text" id="slider_bc-max" class="browser-default right" />
+              <div class="categ_bc-container">
+                <div id="filter_breedCount"></div>
+              </div>
+            </div>
+
+            <div class="categ_CE">
+              <p class="categ_label">CE</p>
+
+              <input type="text" id="slider_CE-min" class="browser-default left" />
+              <input type="text" id="slider_CE-max" class="browser-default right" />
+              <div class="categ_CE-container">
+                <div id="filter_CE"></div>
+              </div>
             </div>
           </div>
 
-          <div class="categ_CE">
-            <p class="categ_label">CE</p>
-
-            <input type="text" id="slider_CE-min" class="browser-default left" />
-            <input type="text" id="slider_CE-max" class="browser-default right" />
-            <div class="categ_CE-container">
-              <div id="filter_CE"></div>
-            </div>
+          <div class="categ_parts hide filterCategContainer">
+            <p>This feature is not available at the moment</p>
           </div>
 
-          <div class="categ_Stat">
+          <div class="categ_stat hide filterCategContainer">
             <p class="categ_label">Attack</p>
 
             <input type="text" id="slider_attack-min" class="browser-default left" />
