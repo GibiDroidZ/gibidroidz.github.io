@@ -255,11 +255,11 @@
           $('#filter_fire').prop('checked', true);
         }
 
-        if (onURL_Race[j] == 3) {
+        if (onURL_Race[j] == 4) {
           $('#filter_storm').prop('checked', true);
         }
 
-        if (onURL_Race[j] == 4) {
+        if (onURL_Race[j] == 3) {
           $('#filter_rock').prop('checked', true);
         }
 
@@ -443,10 +443,10 @@
       URL_race.push('2');
 
     if ($('#filter_storm').is(":checked"))
-      URL_race.push('3');
+      URL_race.push('4');
 
     if ($('#filter_rock').is(":checked"))
-      URL_race.push('4');
+      URL_race.push('3');
 
     if ($('#filter_thunder').is(":checked"))
       URL_race.push('5');
