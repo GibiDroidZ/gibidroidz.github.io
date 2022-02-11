@@ -21,94 +21,100 @@
   <link rel="icon" href="assets/DM-logo.png">
 
 
+  <link href="../general.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="../parts.css" rel="stylesheet">
   <link href="skill.css" rel="stylesheet">
-
-
 </head>
 
 <body id="parallax">
   <div class="bg_overlay"></div>
-
-  <div class="alert_trigger">
-    <a class="btn-floating pulse black"><i class="fa fa-gear fa-spin"></i></a>
-  </div>
-
-  <div class="alert_message">
-    <div class="alert_content hide">
-      <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
-      <i class="fa fa-close alert_dismiss"></i>
-      <p class="small-text">
-        TO DO: <br>
-        1. Sync skill images<br>
-        2. Responsiveness issue <br />
-      </p>
-      <p class="small-text">Want to help the project? Join my discord <b><i><a href="https://discord.gg/MkKbAYFg9F">here</a></i></b></p>
-
-      <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
-      <p class="small-text">
-        <i>If you are enjoying this project, you can consider donating through my wallet address. </i><br />
-        <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c</button>
-      </p>
-
-    </div>
-  </div>
-
-  <div class="change_trigger">
-    <a class="btn-floating pulse black"><i class="fa fa-list"></i></a>
-  </div>
-
-  <div class="change_message hide">
-    <p><b>Changelogs:</b></p>
-    <i class="fa fa-close change_dismiss"></i>
-    <p class="small-text">
-      <b>02/06/22.</b> Released v0.0.5. Updated parts to display mutation tags. <br />
-      <b>02/04/22.</b> Released v0.0.4. Optimize code to display Dragon No. in URL. <br />
-      <b>02/03/22.</b> Released v0.0.3. Updated some UI components. <br />
-      <b>01/23/22.</b> Released v0.0.2. This includes fixes on missing dragon parts. <br />
-      <b>01/20/22.</b> Released v0.0.1. This includes searching dragons, completed with all dragon parts.
-    </p>
-  </div>
 
   <!--div class="no-mobile">
     <p>This version of DM.gg is not available on smaller screens at the moment!</p>
   </div-->
 
   <main class='body row'>
-    <div class="side_bar">
-      <a href="../CheckerPlus/index.html"><img src="../assets/DM-logo.png" alt="DM logo" /></a>
-      <p class="categ_label">Tools</p>
-      <ul>
-        <li><a href="#">Checker <i class="fa-solid fa-square-plus"></i> <span class="pill">BETA</span></a></li>
-        <li><a href="../MarketPlus/index.html">Market <i class="fa-solid fa-square-plus"></i> <span class="pill">WIP</span></a></li>
-        <li><a href="#" class="tooltipped" data-position="right" data-tooltip="Coming soon!">Inbreeding Checker</a></li>
-      </ul>
 
-      <div class="creator">
-        <a class="btn-floating pulse white"><img class="" src="https://cdn.discordapp.com/avatars/366452806246465537/465a93828fe0c618317c03bbe774512f.webp?size=100" alt=""></a>
+    <nav class="navBar grey darken-4">
+      <div class="">
+        <a href="../../DM.gg/index.html" class="site_Logo left"><img src="../assets/DM-logo.png" alt="DM logo" /></a>
+
+        <ul class="left">
+          <li class="app_Picker"><i class="fa-duotone fa-grid"></i></li>
+        </ul>
+        <ul class="right">
+          <li class="changeLogs"><i class="fa-solid fa-memo"></i></li>
+          <li class="notice"><i class="fa-solid fa-triangle-exclamation"></i></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row app_PickerContent dropdown_Picker hide">
+      <div class="col l6 m6 s6">
+        <a href="#">
+          <i class="fa-duotone fa-badge-check fa-2xl"></i> <br />
+          Checker +
+        </a>
+      </div>
+
+      <div class="col l6 m6 s6">
+        <a href="../MarketPlus/index.html">
+          <i class="fa-duotone fa-bag-shopping fa-2xl"></i><br />
+          Market +
+        </a>
+      </div>
+    </div>
+
+    <div class="changeLogsContent dropdown_Picker hide">
+      <p class="small-text">
+        <b>02/06/22.</b> Released v0.0.5. Updated parts to display mutation tags. <br />
+        <b>02/04/22.</b> Released v0.0.4. Optimize code to display Dragon No. in URL. <br />
+        <b>02/03/22.</b> Released v0.0.3. Updated some UI components. <br />
+        <b>01/23/22.</b> Released v0.0.2. This includes fixes on missing dragon parts. <br />
+        <b>01/20/22.</b> Released v0.0.1. This includes searching dragons, completed with all dragon parts.
+      </p>
+    </div>
+
+    <div class="noticeContent dropdown_Picker hide">
+      <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
+      <p class="small-text">
+        TO DO: <br>
+        1. Allow multiple pages to be displayed<br>
+        2. Responsiveness issue <br />
+        3. Add Parts filter <br />
+      </p>
+      <p class="small-text">Want to help the project? Join my discord <b><i><a href="https://discord.gg/MkKbAYFg9F">here</a></i></b></p>
+
+      <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
+      <p class="small-text">
+        <i>If you are enjoying this project, you can consider donating through my wallet address. </i><br />
+        <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c <i class="fa-solid fa-copy"></i></button>
+      </p>
+
+      <div class="creator right">
         <div>GibiDroidZ#3281</div>
+        <a class="btn-floating pulse pink darken-4"><img class="" src="https://cdn.discordapp.com/avatars/366452806246465537/465a93828fe0c618317c03bbe774512f.webp?size=100" alt=""></a>
       </div>
     </div>
 
     <div class="main_content">
-
       <h1>Checker <i class="fa-solid fa-square-plus"></i></h1>
 
-      <div class="col l12 row valign-wrapper">
-        <div class="input-field col l10">
+      <div class="col l12 m12 s12 row valign-wrapper">
+        <div class="input-field col l10 m10 s12">
           <input placeholder="What's your dragon number?" id="first_name" type="text" class="validate dragonNo">
           <label for="first_name">Dragon Number</label>
         </div>
 
-        <div class="col l2">
+        <div class="col l2 m2 s12">
           <button class="btn waves-effect waves-light getInput brown">Search
             <i class="fas fa-search"></i>
           </button>
         </div>
       </div>
 
-      <div class="dragon_showCase col l6 ">
+      <div class="dragon_showCase col l6 m6 s12">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
             <div class="dragon_body">
@@ -170,10 +176,10 @@
         </div>
       </div>
 
-      <div class="dragon_details col l6">
+      <div class="dragon_details col l6 m6 s12 ">
         <p class="detail_section">Skills</p>
         <div class="row">
-          <div class="col l6">
+          <div class="col l6 m6 s12">
             <div class="card dragon_card">
               <div class="card-image">
                 <img class="dragon_skill1-image" src="">
@@ -205,7 +211,7 @@
             </div>
           </div>
 
-          <div class="col l6">
+          <div class="col l6 m6 s12">
             <div class="card dragon_card">
               <div class="card-image">
                 <img class="dragon_skill2-image" src="">
@@ -237,7 +243,7 @@
             </div>
           </div>
 
-          <div class="col l6 skill_spacer">
+          <div class="col l6 m6 s12 skill_spacer">
             <div class="card dragon_card">
               <div class="card-image">
                 <img class="dragon_skill3-image" src="">
@@ -270,7 +276,7 @@
             </div>
           </div>
 
-          <div class="col l6 skill_spacer">
+          <div class="col l6 m6 s12 skill_spacer">
             <div class="card dragon_card">
               <div class="card-image">
                 <img class="dragon_skill4-image" src="">
@@ -314,6 +320,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </script>
 
+  <script src="../general.js"></script>
   <script src="scripts.js"></script>
 </body>
 

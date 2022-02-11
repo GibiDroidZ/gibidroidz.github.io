@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/DM-logo.png">
 
+  <link href="../general.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="../parts.css" rel="stylesheet">
 </head>
@@ -27,14 +28,49 @@
   <div id="parallax"></div>
   <div class="bg_overlay"></div>
 
-  <div class="alert_trigger">
-    <a class="btn-floating pulse black"><i class="fa fa-gear fa-spin"></i></a>
-  </div>
+  <main class='body row'>
+    <nav class="navBar grey darken-4">
+      <div class="">
+        <a href="../../DM.gg/index.html" class="site_Logo left"><img src="../assets/DM-logo.png" alt="DM logo" /></a>
 
-  <div class="alert_message">
-    <div class="alert_content hide">
+        <ul class="left">
+          <li class="app_Picker"><i class="fa-duotone fa-grid"></i></li>
+        </ul>
+        <ul class="right">
+          <li class="darkModeTrigger"><i class="fa-solid fa-moon"></i></i></li>
+          <li class="changeLogs"><i class="fa-solid fa-memo"></i></li>
+          <li class="notice"><i class="fa-solid fa-triangle-exclamation"></i></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row app_PickerContent dropdown_Picker hide">
+      <div class="col l6 m6 s6">
+        <a href="../CheckerPlus/index.html">
+          <i class="fa-duotone fa-badge-check fa-2xl"></i> <br />
+          Checker +
+        </a>
+      </div>
+
+      <div class="col l6 m6 s6">
+        <a href="#">
+          <i class="fa-duotone fa-bag-shopping fa-2xl"></i><br />
+          Market +
+        </a>
+      </div>
+    </div>
+
+    <div class="changeLogsContent dropdown_Picker hide">
+      <p class="small-text">
+        <b>02/06/22.</b> Released v0.0.4. Updated some UI components + fixed slider bug on page load.<br />
+        <b>02/05/22.</b> Released v0.0.3. Added Stat, Max Display filters and reworked Sort. <br />
+        <b>02/04/22.</b> Released v0.0.2. Fixed various bugs and integrated to Checker +. <br />
+        <b>02/03/22.</b> Released v0.0.1. Release first initial version of Market +. <br />
+      </p>
+    </div>
+
+    <div class="noticeContent dropdown_Picker hide">
       <p><b><i class="fa fa-gear fa-spin"></i> This site is a work in progress!</b></p>
-      <i class="fa fa-close alert_dismiss"></i>
       <p class="small-text">
         TO DO: <br>
         1. Allow multiple pages to be displayed<br>
@@ -46,40 +82,18 @@
       <input type="text" value="0x157b0984a6F34d04b6e345a4a898519B59D49e9c" id="wallet" class="hide">
       <p class="small-text">
         <i>If you are enjoying this project, you can consider donating through my wallet address. </i><br />
-        <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c</button>
+        <button onclick="copyWallet(); M.toast({html: 'Thank you for sharing your interest to the project!'})">0x157b0984a6F34d04b6e345a4a898519B59D49e9c <i class="fa-solid fa-copy"></i></button>
       </p>
 
-    </div>
-  </div>
-
-  <div class="change_trigger">
-    <a class="btn-floating pulse black"><i class="fa fa-list"></i></a>
-  </div>
-
-  <div class="change_message hide">
-    <p><b>Changelogs:</b></p>
-    <i class="fa fa-close change_dismiss"></i>
-    <p class="small-text">
-      <b>02/06/22.</b> Released v0.0.4. Updated some UI components + fixed slider bug on page load.<br />
-      <b>02/05/22.</b> Released v0.0.3. Added Stat, Max Display filters and reworked Sort. <br />
-      <b>02/04/22.</b> Released v0.0.2. Fixed various bugs and integrated to Checker +. <br />
-      <b>02/03/22.</b> Released v0.0.1. Release first initial version of Market +. <br />
-    </p>
-  </div>
-
-  <main class='body row'>
-    <!--nav class="navBar brown">
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="../assets/DM-logo.png" alt="DM logo" /></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href=""><i class="fa fa-list"></i></a></li>
-          <li><a href=""><i class="fa fa-gear fa-spin"></i></a></li>
-          <li><a href=""><i class="fa-duotone fa-grid"></i></a></li>
-        </ul>
+      <div class="creator right">
+        <div>GibiDroidZ#3281</div>
+        <a class="btn-floating pulse pink darken-4"><img class="" src="https://cdn.discordapp.com/avatars/366452806246465537/465a93828fe0c618317c03bbe774512f.webp?size=100" alt=""></a>
       </div>
-    </nav-->
+    </div>
+
     <div class="side_bar">
-      <a href="../MarketPlus/index.html"><img src="../assets/DM-logo.png" alt="DM logo" /></a>
+      <!--a href="../MarketPlus/index.html"><img src="../assets/DM-logo.png" alt="DM logo" /></a-->
+      <h1 class="sidebar_Title">Market <i class="fa-solid fa-square-plus marketPlusIcon"></i></h1>
       <div class="filters">
         <div class="filterButtons">
 
@@ -202,17 +216,10 @@
             </div>
           </div>
         </div>
-
-        <div class="creator">
-          <a class="btn-floating pulse white"><img class="" src="https://cdn.discordapp.com/avatars/366452806246465537/465a93828fe0c618317c03bbe774512f.webp?size=100" alt=""></a>
-          <div>GibiDroidZ#3281</div>
-        </div>
       </div>
     </div>
 
     <div class="main_content">
-      <h1>Market <i class="fa-solid fa-square-plus marketPlusIcon"></i></h1>
-
       <div class="filter_sort">
         <p class="totalDragons"></p>
         <span class="showingMaxDragons"><i></i></span>
@@ -269,6 +276,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </script>
 
+  <script src="../general.js"></script>
   <script src="scripts.js"></script>
 </body>
 
