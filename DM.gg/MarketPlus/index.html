@@ -27,6 +27,13 @@
 <body>
   <div id="parallax"></div>
   <div class="bg_overlay"></div>
+  <div class="announcement">
+    <h2>Something big is happening!</h2>
+    <h2>Tired of the long website name? Guess what?</h2>
+    <h1>DM.gg is now <br /><a href="https://DMLand.xyz" target="_blank">DMLand </a><br /> <a href="https://DMLand.xyz" target="_blank">(https://DMLand.xyz)</a></h1>
+    <h2>This is supposed to be a personal project but since people liked it, you deserve an easier way to remember the link! :)</h2>
+    <h2>Do note that this link (gibidroidz.github.io) will be decommisioned on 02/20/22 so do bookmark the new link! </h2>
+  </div>
 
   <main class='body row'>
     <nav class="navBar grey darken-4">
@@ -172,7 +179,22 @@
           </div>
 
           <div class="categ_parts hide filterCategContainer">
-            <p>This feature is not available at the moment</p>
+            <input type="text" name="search" class="browser-default textField">
+            <div id="selectedPartsList">
+
+              <!--div class="selectedPart">
+                <div class="valign-wrapper selectedPartDetail">
+                  <div class="dragonPart part-Goldencheess"></div>
+                  <span>
+                    <p class="dragon_partName">Ice Gem</p>
+                    <p class="dragon_skillName">Recovery</p>
+                  </span>
+                  <i class="fa-solid fa-xmark removeSelected"></i>
+                </div>
+
+                <p class="dragon_skillDetails"> <i class="fa-solid fa-circle-bolt"></i> 1 &bull; <i class="fas fa-sword"></i> 0 &bull; <i class="fas fa-shield"></i> 100</p>
+              </div-->
+            </div>
           </div>
 
           <div class="categ_stat hide filterCategContainer">
@@ -254,14 +276,6 @@
           </select>
           <label>Max Display</label>
         </div>
-
-        <!--select class="browser" name="">
-          <option value="1">Latest</option>
-          <option value="2">Lowest Price</option>
-          <option value="3">Highest Price</option>
-          <option value="4">Lowest ID</option>
-          <option value="5">Highest ID</option>
-        </select-->
       </div>
 
       <div id="products" class="row">
@@ -279,6 +293,7 @@
 
   <script src="../general.js"></script>
   <script src="scripts.js"></script>
+  <script src="autocomplete.js"></script>
 </body>
 
 </html>

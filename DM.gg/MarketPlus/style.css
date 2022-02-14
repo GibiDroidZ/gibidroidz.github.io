@@ -1,3 +1,22 @@
+.announcement {
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.announcement h2 {
+  font-size: 20px
+}
+
+.announcement a {
+  color: maroon;
+  font-weight: bold;
+  font-size: 4.2rem !important;
+}
+
 * {
   font-size: 12px;
 }
@@ -57,10 +76,6 @@
 .filterCategories {
   height: calc(100vh - 250px);
   overflow: auto;
-}
-
-.filterCategories div {
-  margin-right: 5px;
 }
 
 .categ_label {
@@ -479,4 +494,90 @@
 
 .pages .pagination li i {
   font-size: 16px;
+}
+
+#selectedPartsList {
+  text-align: left;
+}
+
+.selectedPart {
+  background-color: RGBA(255, 255, 255, .5);
+  margin-bottom: 2px;
+  padding: 5px 0;
+  border-radius: 5px;
+  border-bottom: 3px solid white;
+}
+
+.selectedPart span {
+  display: inline-block;
+  width: 120px;
+}
+
+.selectedPart span p {
+  margin: 0;
+}
+
+.dragonPart {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-size: 50px;
+}
+
+.selectedPart span .dragon_partName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.selectedPart .dragon_skillDetails {
+  text-align: center;
+  margin: 0;
+}
+
+.selectedPartDetail {
+  width: calc(100% - 15px);
+}
+
+.ui-widget-content {
+  border: 0px solid transparent !important;
+  background-color: transparent;
+}
+
+.ui-menu .ui-menu-item .selectedPart {
+  background-color: white;
+  border-bottom: 0;
+  padding: 5px 0;
+}
+
+.ui-menu .ui-menu-item .selectedPart.ui-state-active {
+  margin-bottom: 2px !important;
+  margin-top: 0;
+  border: 0;
+  color: black;
+  padding: 5px 1px;
+  background-color: RGB(220, 220, 220);
+}
+
+.ui-widget.ui-widget-content {
+  height: 310px;
+  overflow: hidden;
+}
+
+.textField {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 0;
+  border-bottom: 3px solid #44a3cf;
+  outline: 0;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.filterCategContainer {
+  padding: 0 5px;
+}
+
+.removeSelected {
+  cursor: pointer;
 }

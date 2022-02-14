@@ -153,6 +153,53 @@ $(function() {
   });
 });
 
+function getDNA(dna) {
+  return partsList.filter(
+      function(partsList){ return partsList.dna == dna}
+  );
+}
+
+function returnSort(sort) {
+  switch (sort) {
+    case '1':
+      sortParam = '"sortRole":2,"sortType":1';
+      break;
+
+    case '2':
+      sortParam = '"sortRole":1,"sortType":0';
+      break;
+
+    case '3':
+      sortParam = '"sortRole":1,"sortType":1';
+      break;
+
+    case '4':
+      sortParam = '"sortRole":0,"sortType":0';
+      break;
+
+    case '5':
+      sortParam = '"sortRole":0,"sortType":1';
+      break;
+    default:
+  }
+}
+
+function onLoadDNA(searchPartString) {
+
+  var searchParts = [];
+  searchParts = searchPartString.split(',');
+      for (var g = 0; g < searchParts.length-1; g++) {
+        alert(searchParts[g]);
+        searchPartToQueryString = JSON.stringify(getDNA(searchParts[g]));
+//alert('getDNA' + JSON.stringify(getDNA(searchParts[g])));
+        //alert('searchPartToQueryString'+ JSON.stringify(getDNA(searchParts[g])));
+        searchPartToQuery.push(searchPartToQueryString.substring(1, searchPartToQueryString.length - 1));
+
+      }
+
+            //  alert('searchPartToQuery' + searchPartToQuery);
+}
+
 var currentPage;
 
 var URL_race = [];
@@ -164,8 +211,6 @@ var URL_defense = [];
 var URL_health = [];
 var URL_speed = [];
 var URL_intellect = [];
-//var URL_sort;
-//var URL_sort = '"sortRole":2,"sortType":1';
 var URL_maxDisplay;
 var URL_page = '1';
 
@@ -184,6 +229,18 @@ var sort = urlParams.get('sort') || '1';
 var sortParam;
 var maxDisplay = urlParams.get('maxDisplay') || '30';
 const page = urlParams.get('page') || URL_page;
+
+
+var partsList = [];
+var searchParts = [];
+var searchPartToQueryString;
+var searchPartToQuery = [];
+
+var searchPartURL = '';
+var dna = urlParams.get('dna') || '';
+var searchPartString = dna || '';
+
+onLoadDNA(searchPartString);
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('select');
@@ -312,6 +369,19 @@ document.addEventListener('DOMContentLoaded', function() {
       $('#slider_intellect-min').val(onURL_intellect[0]);
       $('#slider_intellect-max').val(onURL_intellect[1]);
     }
+
+    /*if (dna != '') {
+      var dnaList = dna.split(',');
+      var dnaSingleList = [];
+      var partsFromURL = document.getElementById('selectedPartsList');;
+
+      for (var g = 0; g < dnaList.length-1; g++) {
+        dnaSingleList = getDNA(dnaList[g])[0];
+        partsFromURL.innerHTML += '<div class="selectedPart" data-dna="' + dnaSingleList.dna + '"><div class="valign-wrapper selectedPartDetail"><div class="dragonPart part-' + dnaSingleList.partClass + '"></div><span><p class="dragon_partName">' + dnaSingleList.dnaNameEn + '</p><p class="dragon_skillName">' + dnaSingleList.skillName + '</p></span><i class="fa-solid fa-xmark removeSelected" onclick="removeSelected(this)"></i></div></div>';
+      }
+    }*/
+
+    loadMarketPlace();
   }, delayInMilliseconds);
 
 
@@ -356,32 +426,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 returnSort(sort);
-
-function returnSort(sort) {
-  switch (sort) {
-    case '1':
-      sortParam = '"sortRole":2,"sortType":1';
-      break;
-
-    case '2':
-      sortParam = '"sortRole":1,"sortType":0';
-      break;
-
-    case '3':
-      sortParam = '"sortRole":1,"sortType":1';
-      break;
-
-    case '4':
-      sortParam = '"sortRole":0,"sortType":0';
-      break;
-
-    case '5':
-      sortParam = '"sortRole":0,"sortType":1';
-      break;
-    default:
-
-  }
-}
 
 // Apply filters
 $('.apply_Filter').click(function() {
@@ -430,6 +474,16 @@ $('.apply_Filter').click(function() {
   URL_intellect.push($('#slider_intellect-min').val());
   URL_intellect.push($('#slider_intellect-max').val());
 
+  //alert('applyFilter DNA' + searchPartString);
+  onLoadDNA(searchPartString);
+
+/*
+  var searchParts = searchPartString.split(',');
+  for (var g = 0; g < searchParts.length-1; g++) {
+    searchPartToQueryString = JSON.stringify(getDNA(searchParts[g]));
+    searchPartToQuery.push(searchPartToQueryString.substring(1, searchPartToQueryString.length - 1));
+  }
+*/
   var new_URL = '';
   new_URL += 'race=' + URL_race;
   new_URL += '&form=' + URL_form;
@@ -443,6 +497,7 @@ $('.apply_Filter').click(function() {
   new_URL += '&sort=' + URL_sort;
   new_URL += '&maxDisplay=' + URL_maxDisplay;
   new_URL += '&page=' + URL_page;
+  new_URL += '&dna=' + searchPartString;
   location.href = 'index.html?' + new_URL;
 });
 
@@ -468,6 +523,7 @@ $('.reset_Filter').click(function() {
   $('#slider_CE-max').val('49008');
 });
 
+// Switch Filter Tab
 $('.filter_tabs li').click(function() {
   $('.filter_tabs li').removeClass('selected');
   $(this).addClass('selected');
@@ -500,8 +556,12 @@ $('.filter_tabs li').click(function() {
 //   0. Lowest Price
 //   1. Highest Price
 // 2. Latest
+//
 
-var query = '{"clazz":[' + race + '],"limit":' + maxDisplay + ',"page":' + page + ',"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[],"attackArr":[' + attack + '],"defenseArr":[' + defense + '],"healthArr":[' + health + '],"speedArr":[' + speed + '],"intelligenceArr":[' + intellect + '],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
+// Load MarketPlace
+function loadMarketPlace() {
+var query = '{"clazz":[' + race + '],"limit":' + maxDisplay + ',"page":' + page + ',"stage":[' + form + '],"saleType":[],' + sortParam + ',"dna":[' + JSON.stringify(searchPartToQuery) + '],"attackArr":[' + attack + '],"defenseArr":[' + defense + '],"healthArr":[' + health + '],"speedArr":[' + speed + '],"intelligenceArr":[' + intellect + '],"ceArr":[' + ce + '],"breedCountArr":[ ' + breedCount + ']}';
+
 $.ajax({
   type: "POST",
   url: 'https://dragonmainland.io/api/market/product/page',
@@ -622,3 +682,4 @@ $.ajax({
 
   }
 });
+}
